@@ -1,0 +1,9 @@
+<div class="book-card">
+  <img [src]="book?.coverImageUrl" alt="{{ book?.title }}" class="book-image" />
+  <div class="book-details">
+    <h3>{{ book?.title }}</h3>
+    <p><strong>Author:</strong> {{ book?.author }}</p>
+    <p><strong>Published:</strong> {{ book?.publishedYear }}</p>
+    <p>{{ book?.description }}</p>
+  </div>
+</div>
