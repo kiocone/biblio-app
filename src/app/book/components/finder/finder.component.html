@@ -1,5 +1,17 @@
-<input
-  type="text" 
-  placeholder="Search books..." 
-  (keyup)="searchBooks($event)"
-/>
+<div class="finder-body">
+  <form [formGroup]="searchForm" (submit)="searchForm.reset()">
+    <input
+      type="text"
+      formControlName="searchQuery"
+      placeholder="Search books..." 
+      (keyup)="searchBooks($event)"
+    />
+    <button 
+      type="button" 
+      (click)="resetSearch()" 
+      aria-label="Clear search"
+    >
+      &#x2715;
+    </button>
+  </form>
+</div>

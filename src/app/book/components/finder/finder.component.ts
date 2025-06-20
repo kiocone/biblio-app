@@ -1,21 +1,31 @@
 import { Component, Output, EventEmitter } from "@angular/core";
+import { FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
 
 @Component({
   selector: 'finder',
   templateUrl: './finder.component.html',
-  styleUrl: './finder.component.scss'
+  styleUrl: './finder.component.scss',
+  imports: [ReactiveFormsModule],
+  standalone: true
 })
 export class FinderComponent {
-  // This component is responsible for finding books.
-  // It will contain methods to search for books by title, author, or ISBN.
+
+  searchForm = new FormGroup({
+    searchQuery: new FormControl<string>('')
+  });
 
   @Output() searchEvent = new EventEmitter<string>();
 
   constructor() {
-    // Initialization code can go here.
   }
 
   searchBooks(event: any): void {
-    this.searchEvent.emit(event.target.value.trim());
+    this.searchForm.controls.searchQuery.setValue(event.target.value.trim());
+    this.searchEvent.emit(this.searchForm.controls.searchQuery.value!);
   }
-} 
+
+  resetSearch(): void {
+    this.searchForm.controls.searchQuery.setValue('');
+    this.searchEvent.emit(this.searchForm.controls.searchQuery.value!);
+  }
+}

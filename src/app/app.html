@@ -1,4 +1,22 @@
-<h3>Busqueda de libros</h3>
-<finder class="book-finder" (searchEvent)="onSearch($event)"></finder>
-<app-book class="book-card-container"></app-book>
+<div class="header">
+  <img
+    src="assets/serenisima-logo.png"
+    alt="Serenisima Logo"
+    class="logo"
+    />
+  <div class="header-text">
+    <h1 class="header-title">Biblioteca de la Serenisima</h1>
+    <strong>Version 0.0.1(vista previa)</strong>
+  </div>
+</div>
+<finder
+  class="book-finder"
+  (searchEvent)="onSearch($event)"
+></finder>
+<app-book
+  class="book-card-container"
+  [findBook]="searchTerm"
+  (selectBook)="onSelectBook($event)"
+></app-book>
+
 <router-outlet />

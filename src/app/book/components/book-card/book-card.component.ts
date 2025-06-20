@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, EventEmitter, Input, Output } from "@angular/core";
 import { IBook } from "../../book.interface";
 
 @Component({
@@ -9,4 +9,9 @@ import { IBook } from "../../book.interface";
 })
 export class BookCardComponent {
   @Input() book: IBook | undefined;
+  @Output() selectBook = new EventEmitter<number | undefined>();
+
+  onSelectBook(bookId: number | undefined): void {
+    this.selectBook.emit(bookId);
+  }
 }

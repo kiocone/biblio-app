@@ -15,10 +15,13 @@ import { FinderComponent } from './book/components/finder/finder.component';
 })
 export class App {
   protected title = 'biblio-app';
+  searchTerm: string = '';
 
   onSearch(event: string): void {
-    // This method will handle the search query from the FinderComponent.
-    console.log('Search query:', event);
-    // You can implement further logic to handle the search, such as filtering books.
+    this.searchTerm = event;
+  }
+
+  onSelectBook(bookId: number | undefined): void {
+    console.log(`Selected book ID: ${bookId}`);
   }
 }
