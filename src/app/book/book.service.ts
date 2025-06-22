@@ -1,26 +1,44 @@
 import { Injectable } from '@angular/core';
 import { IBook } from './book.interface';
+import { staticBookList } from './book-list';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
 
-  bookList: IBook[] = [
-    { id: 1, title: 'The Great Gatsby', author: 'F. Scott Fitzgerald', publishedYear: '1925', isbn: '9780743273565', coverImageUrl: 'https://covers.openlibrary.org/b/id/9367463-L.jpg', description: 'A novel about the American dream.', genre: 'Fiction', availableCopies: 5 },
-    { id: 2, title: 'To Kill a Mockingbird', author: 'Harper Lee', publishedYear: '1960', isbn: '9780061120084', coverImageUrl: 'https://covers.openlibrary.org/b/id/12606566-L.jpg', description: 'A novel about racial injustice.', genre: 'Fiction', availableCopies: 2 },
-    { id: 3, title: '1984', author: 'George Orwell', publishedYear: '1949', isbn: '9780451524935', coverImageUrl: 'https://covers.openlibrary.org/b/id/7222246-L.jpg', description: 'A dystopian novel about totalitarianism.', genre: 'Dystopian', availableCopies: 4 },
-    { id: 4, title: 'Pride and Prejudice', author: 'Jane Austen', publishedYear: '1813', isbn: '9780141439518', coverImageUrl: 'https://covers.openlibrary.org/b/id/12604738-L.jpg', description: 'A romantic novel about manners.', genre: 'Romance', availableCopies: 3 },
-    { id: 5, title: 'Moby-Dick', author: 'Herman Melville', publishedYear: '1851', isbn: '9781503280786', coverImageUrl: 'https://covers.openlibrary.org/b/id/3350964-L.jpg', description: 'A novel about obsession and revenge.', genre: 'Adventure', availableCopies: 1 }
-  ];
-
-  constructor() { }
+  constructor() {
+  }
 
   getBooks(): IBook[] {
-    return this.bookList;
+    staticBookList.forEach(book => {
+      if (!book.coverImageUrl) {
+        const randomNumber = Math.floor(Math.random() * 9) + 1;
+        book.coverImageUrl = `assets/portada${randomNumber}.png`; // Placeholder image for books without cover
+      }
+      if (!book.author) {
+        book.author = ''; // Default value for missing author
+      }
+      if (!book.editorial) {
+        book.editorial = ''; // Default value for missing editorial
+      }
+      if (!book.publishedYear) {
+        book.publishedYear = ''; // Default value for missing published year
+      }
+      if (!book.language) {
+        book.language = ''; // Default value for missing language
+      }
+      if (!book.description) {
+        book.description = ''; // Default value for missing description
+      }
+      if (!book.genre) {
+        book.genre = ''; // Default value for missing genre
+      }
+    });
+    return staticBookList;
   }
 
   getBookById(id: number): IBook | undefined {
-    return this.bookList.find(book => book.id === id);
+    return staticBookList.find(book => book.id === id);
   }
 }

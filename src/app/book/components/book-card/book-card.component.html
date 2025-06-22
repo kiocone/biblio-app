@@ -2,8 +2,12 @@
   <img [src]="book?.coverImageUrl" alt="{{ book?.title }}" class="book-image" />
   <div class="book-details">
     <h3>{{ book?.title }}</h3>
-    <p><strong>Author:</strong> {{ book?.author }}</p>
-    <p><strong>Published:</strong> {{ book?.publishedYear }}</p>
+    @if (book?.author !== ''){<p><strong>Autor:</strong> {{ book?.author }}</p>}
+    @if (book?.publishedYear !== ''){<p><strong>Año:</strong> {{ book?.publishedYear }}</p>}
+    @if (book?.editorial !== ''){<p><strong>Editorial:</strong> {{ book?.editorial }}</p>}
+    @if (book?.isbn !== ''){<p><strong>ISBN:</strong> {{ book?.isbn }}</p>}
+    @if (book?.language !== ''){<p><strong>Idioma:</strong> {{ book?.language }}</p>}
+    @if (book?.genre !== ''){<p><strong>Género:</strong> {{ book?.genre }}</p>}
     <p>{{ book?.description }}</p>
   </div>
 </div>

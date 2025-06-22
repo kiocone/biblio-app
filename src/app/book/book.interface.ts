@@ -1,11 +1,13 @@
 export interface IBook {
   id: number;
   title: string;
-  author: string;
-  publishedYear: string;
+  author: string | null;
+  publishedYear: string | null;
   isbn: string;
-  coverImageUrl: string;
-  description: string;
-  genre: string;
+  editorial: string | null;
+  language: string | null;
+  coverImageUrl: string | null;
+  description: string | null;
+  genre: string | null;
   availableCopies: number;
 }

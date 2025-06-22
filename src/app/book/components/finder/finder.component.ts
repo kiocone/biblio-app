@@ -20,8 +20,8 @@ export class FinderComponent {
   }
 
   searchBooks(event: any): void {
-    this.searchForm.controls.searchQuery.setValue(event.target.value.trim());
-    this.searchEvent.emit(this.searchForm.controls.searchQuery.value!);
+    this.searchForm.controls.searchQuery.setValue(event.target.value);
+    this.searchEvent.emit(this.searchForm.controls.searchQuery.value!.trim());
   }
 
   resetSearch(): void {

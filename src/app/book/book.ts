@@ -23,8 +23,6 @@ export class BookComponent implements OnInit {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    //Called before any other lifecycle hook. Use it to inject dependencies, but avoid any serious work here.
-    //Add '${implements OnChanges}' to the class.
     if (changes['findBook']) {
       this.filterBooks();
     }
@@ -34,10 +32,10 @@ export class BookComponent implements OnInit {
     if (this.findBook) {
       this.bookList = this.bookList.filter(book =>
         book.title.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.author.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.publishedYear.toString().includes(this.findBook) ||
-        book.genre.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.description.toLowerCase().includes(this.findBook.toLowerCase())
+        book.author!.toLowerCase().includes(this.findBook.toLowerCase()) ||
+        book.publishedYear!.toString().includes(this.findBook) ||
+        book.genre!.toLowerCase().includes(this.findBook.toLowerCase()) ||
+        book.description!.toLowerCase().includes(this.findBook.toLowerCase())
       );
     } else {
       this.bookList = this.bookService.getBooks();
