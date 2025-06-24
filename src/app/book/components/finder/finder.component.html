@@ -1,17 +1,28 @@
-<div class="finder-body">
-  <form [formGroup]="searchForm" (submit)="searchForm.reset()">
-    <input
-      type="text"
-      formControlName="searchQuery"
-      placeholder="Buscar libros..."
-      (keyup)="searchBooks($event)"
-    />
-    <button 
-      type="button" 
-      (click)="resetSearch()" 
-      aria-label="Clear search"
+<div class="finder-container">
+  @if (showBackButton) {
+    <button
+      type="button"
+      (click)="onBackButtonClicked()"
+      class="back-button"
     >
-      &#x2715;
+      Volver
     </button>
-  </form>
+  }
+  <div class="finder-body">
+    <form [formGroup]="searchForm" (submit)="searchForm.reset()">
+      <input
+        type="text"
+        formControlName="searchQuery"
+        placeholder="Buscar libros..."
+        (keyup)="searchBooks($event)"
+      />
+      <button 
+        type="button" 
+        (click)="resetSearch()" 
+        aria-label="Clear search"
+      >
+        &#x2715;
+      </button>
+    </form>
+  </div>
 </div>

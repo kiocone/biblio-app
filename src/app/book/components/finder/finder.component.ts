@@ -1,4 +1,4 @@
-import { Component, Output, EventEmitter } from "@angular/core";
+import { Component, Output, EventEmitter, Input } from "@angular/core";
 import { FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
 
 @Component({
@@ -13,8 +13,9 @@ export class FinderComponent {
   searchForm = new FormGroup({
     searchQuery: new FormControl<string>('')
   });
-
+  @Input() showBackButton: boolean = false;
   @Output() searchEvent = new EventEmitter<string>();
+  @Output() backEvent = new EventEmitter<void>();
 
   constructor() {
   }
@@ -27,5 +28,10 @@ export class FinderComponent {
   resetSearch(): void {
     this.searchForm.controls.searchQuery.setValue('');
     this.searchEvent.emit(this.searchForm.controls.searchQuery.value!);
+  }
+  
+  onBackButtonClicked(): void {
+    this.backEvent.emit();
+    this.showBackButton = false;
   }
 }

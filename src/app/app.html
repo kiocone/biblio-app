@@ -6,17 +6,26 @@
     />
   <div class="header-text">
     <h1 class="header-title">Biblioteca de la Serenisima</h1>
-    <strong>V0.1.0 (beta)</strong>
+    <strong>V0.1.1 (beta)</strong>
   </div>
 </div>
 <finder
   class="book-finder"
+  [showBackButton]="bookDetailView"
   (searchEvent)="onSearch($event)"
+  (backEvent)="onMainViewClick()"
 ></finder>
-<app-book
-  class="book-card-container"
-  [findBook]="searchTerm"
-  (selectBook)="onSelectBook($event)"
-></app-book>
-
-<router-outlet />
+@if (selectedBook) {
+  <book-detail
+    [book]="selectedBook"
+  ></book-detail>
+} @else {
+  <app-book
+    class="book-card-container"
+    [findBook]="searchTerm"
+    (selectBook)="onSelectBook($event)"
+  ></app-book>
+}
+<button class="scroll-to-top" (click)="scrollToTop()">
+  <i class="arrow-up-icon"><strong>&#8593;</strong></i>
+</button>

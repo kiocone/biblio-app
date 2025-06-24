@@ -29,13 +29,17 @@ export class BookComponent implements OnInit {
   }
 
   private filterBooks(): void {
+    // get property names of the IBook interface with string type
+    const IBookProperties: (keyof IBook)[] = ['title', 'author', 'genre', 'description', 'editorial']; // Explicitly define as keys of IBook
+
     if (this.findBook) {
       this.bookList = this.bookList.filter(book =>
         book.title.toLowerCase().includes(this.findBook.toLowerCase()) ||
         book.author!.toLowerCase().includes(this.findBook.toLowerCase()) ||
         book.publishedYear!.toString().includes(this.findBook) ||
         book.genre!.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.description!.toLowerCase().includes(this.findBook.toLowerCase())
+        book.description!.toLowerCase().includes(this.findBook.toLowerCase()) ||
+        book.editorial!.toLowerCase().includes(this.findBook.toLowerCase())
       );
     } else {
       this.bookList = this.bookService.getBooks();

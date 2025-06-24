@@ -2,5 +2,5 @@
   <book-card class="book-card" [book]="book" (selectBook)="onSelectBook($event)"></book-card>
 }
 @if (!bookList || bookList.length === 0) {
-  <div style="font-size: larger;">No se encontraron coincidencias.</div>
+  <div class="no-book">No se encontraron coincidencias.</div>
 }
