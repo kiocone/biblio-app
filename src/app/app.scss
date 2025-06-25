@@ -53,6 +53,7 @@
 .book-card-container {
   display: grid;
   margin: 0.5rem 10px !important;
+  padding-bottom: 36px;
 
 
   @media (min-width: 1024px) {
@@ -80,12 +81,12 @@
     grid-template-rows: repeat(4, 1fr);
     gap: 10px;
     align-items: center;
-
+    
     .book-card {
       width: 300px;
     }
   }
-
+    
 }
 
 .scroll-to-top {
@@ -111,5 +112,30 @@
   }
   &:active {
     transform: scale(0.95);
+  }
+
+  font-size: 27px;
+  font-weight: 900;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #f3cc6f;
+  color: #333;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.8rem;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.1);
+  
+  a {
+    color: #574a00;
+    text-decoration: none;
+    font-weight: bold;
+
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }

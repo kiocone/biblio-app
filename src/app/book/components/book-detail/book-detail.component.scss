@@ -7,6 +7,7 @@
   align-items: center;
   box-shadow: 4px 6px 1px rgba(0, 0, 0, 0.15);
   background-color: #fff3d5;
+  margin-bottom: 16px;
 
   .book-card-header {
     display: flex;
@@ -17,7 +18,6 @@
     @media screen and (max-width: 600px) {
       max-height: 200px;
     }
-    margin-bottom: 16px;
   }
 
   .book-details {

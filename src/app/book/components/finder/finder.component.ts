@@ -21,6 +21,7 @@ export class FinderComponent {
   }
 
   searchBooks(event: any): void {
+    console.log('Searching books with query:', event);
     this.searchForm.controls.searchQuery.setValue(event.target.value);
     this.searchEvent.emit(this.searchForm.controls.searchQuery.value!.trim());
   }
