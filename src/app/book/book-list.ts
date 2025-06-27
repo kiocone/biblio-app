@@ -2,6 +2,19 @@ import { IBook } from "./book.interface";
 
 export const staticBookList: IBook[] = [
   {
+    "id": 594,
+    "coverImageUrl": "assets/portadas/historia-paraguay.jpeg",
+    "title": "La Historia Jamas Contada De La Primera Logia Masónica Del Paraguay",
+    "author": "Fabian Chamorro Torres",
+    "publishedYear": "2025",
+    "isbn": "978-99989-1-387-5",
+    "editorial": null,
+    "language": "Español",
+    "description": null,
+    "genre": null,
+    "availableCopies": 1
+  },
+  {
     "id": 1,
     "coverImageUrl": null,
     "title": "Un Paladín De Los Derechos Humanos",
@@ -1121,7 +1134,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 87,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/1a/c9/1ac91709fb94c1298dc047c2459746bd.jpg",
     "title": "El Secretario,El Preboste Y El Intendente",
     "author": "Dr.Jorge Adoum",
     "publishedYear": "2003",
@@ -1329,12 +1342,12 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 103,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreriadelau.vtexassets.com/arquivos/ids/4542522-800-auto?v=636594677422130000&width=800&height=auto&aspect=true",
     "title": "Manual Del Gran Elegido",
-    "author": "Aldo Lavagnini",
+    "author": "Editorial Kier S.A",
     "publishedYear": "1962",
     "isbn": "SNGLNC-71",
-    "editorial": "Editorial Kier S.A",
+    "editorial": null,
     "language": "Español",
     "description": null,
     "genre": null,
@@ -1368,7 +1381,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 106,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.renaissancebooks.co.nz/assets/images/product/15688.jpg",
     "title": "Proceedings Of The Grand Lodge Of New Zealand",
     "author": null,
     "publishedYear": "2004",
@@ -1381,7 +1394,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 107,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://antiqua.mx/wp-content/uploads/2022/06/8A8E9A19-DA13-4FB7-AB3A-0D69ABDDD21E-scaled.jpeg",
     "title": "¿Por Que Soy Mason ?",
     "author": null,
     "publishedYear": "1973",
@@ -1394,7 +1407,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 108,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i.etsystatic.com/40886124/r/il/7873a7/6082665729/il_680x540.6082665729_9x2v.jpg",
     "title": "The Knebworth Edition",
     "author": "Max Mueller",
     "publishedYear": "1803-1873",
@@ -1410,7 +1423,7 @@ export const staticBookList: IBook[] = [
     "coverImageUrl": null,
     "title": "La Fraternidad N.62",
     "author": null,
-    "publishedYear": "5970",
+    "publishedYear": "1970",
     "isbn": "SGLNC-76",
     "editorial": null,
     "language": "Español",
@@ -1420,7 +1433,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 110,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/f4/07/f40705ef7171ceefcd3096ef59c91e00.jpg",
     "title": "Manual Del Maestro Secreto",
     "author": null,
     "publishedYear": "1987",
@@ -1498,7 +1511,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 116,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreriasiglo.com/139169-large_360/el-libro-del-companero-mason.webp",
     "title": "Libro De Un Compañero Mason",
     "author": null,
     "publishedYear": "2008-5768",
@@ -1514,7 +1527,7 @@ export const staticBookList: IBook[] = [
     "coverImageUrl": null,
     "title": "Lecciones Básicas Del Compañero Mason",
     "author": "Carlos Verhelst",
-    "publishedYear": "6013",
+    "publishedYear": "2013",
     "isbn": "SGLNC-82",
     "editorial": null,
     "language": "Español",
@@ -1550,7 +1563,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 120,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://mandilesazules.wordpress.com/wp-content/uploads/2010/12/gcg-rf.jpg",
     "title": "Rito Francés",
     "author": null,
     "publishedYear": "1989",
@@ -1589,7 +1602,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 123,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Constituc%C3%B3n_Pol%C3%ADtica_de_Colombia_1991.jpg/800px-Constituc%C3%B3n_Pol%C3%ADtica_de_Colombia_1991.jpg",
     "title": "Principios Fundamentales En La Constitución De 1991",
     "author": "Pedro Antonio Lamprea Rodriguez",
     "publishedYear": "1994",
@@ -1602,7 +1615,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 124,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://pictures.abebooks.com/inventory/15313294290.jpg",
     "title": "Yearbook The Grand Lodge",
     "author": null,
     "publishedYear": "2008",
@@ -1732,7 +1745,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 134,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.grandlodgescotland.com/wp-content/uploads/2025/02/New-Year-Book-1000x1000-1.png",
     "title": "Yearbook The Grand Lodge",
     "author": null,
     "publishedYear": "2009",
@@ -1771,7 +1784,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 137,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_603451-MCO48067418245_102021-O.webp",
     "title": "Manual De La  Masonería",
     "author": null,
     "publishedYear": "1981",
@@ -1810,7 +1823,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 140,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cloud10.todocoleccion.online/libros/tc/2023/08/22/11/428006807_tcimg_A2E9B102.webp",
     "title": "Jesús ¿Discípulo De Buda?",
     "author": "Elmar R. Gruber",
     "publishedYear": "1996",
@@ -1849,9 +1862,9 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 143,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://blog.falvarez.es/uploads/2004/12/la-alternativa-del-diablo.jpg",
     "title": "La Alternativa Del Diablo",
-    "author": "Frederick Stuart",
+    "author": "Frederick Forsyth",
     "publishedYear": "1979",
     "isbn": "SGLNC-95",
     "editorial": null,
@@ -1914,7 +1927,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 148,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/36/00/36003d456c3dd5a28974f39e29f14e85.jpg",
     "title": "La Caverna De Los Antepasados",
     "author": null,
     "publishedYear": "1964",
@@ -1927,7 +1940,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 149,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/3e/d9/3ed9ed787c5f22bf436f53b878ffe1ae.jpg",
     "title": "El Apocalipsis Profético De San Juan",
     "author": "Joan Llarch",
     "publishedYear": "1983",
@@ -1940,7 +1953,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 150,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/f3/79/f379ccb71b5146d2bbd9d34dbbacce0d.jpg",
     "title": "Mi Preparacion Para Ganimedes",
     "author": "Yosip Ibrahim",
     "publishedYear": "1991",
@@ -1953,7 +1966,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 151,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://b2clibrerianacional.vtexassets.com/arquivos/ids/345490-800-auto?v=638693703447130000&width=800&height=auto&aspect=true",
     "title": "El Profeta ,El Loco Paginas Escondidas",
     "author": "Jalil Gibran",
     "publishedYear": "1996",
@@ -1966,7 +1979,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 152,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/8e/32/8e32d3af683d33f5de7aa3eed3d94093.jpg",
     "title": "Un Camino De Oración",
     "author": "Antonio De Mello",
     "publishedYear": "1991",
@@ -2031,7 +2044,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 157,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://imagessl8.casadellibro.com/a/l/s7/18/9788415532118.webp",
     "title": "Medico De Cuerpos Y Almas",
     "author": "Taylor Caldwell",
     "publishedYear": "2006",
@@ -2044,7 +2057,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 158,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/71/78/71780f6dfe898d61030b92fb48b85aa3.jpg",
     "title": "La Novena Revelacion: Guia Vivencial",
     "author": "James Redfield",
     "publishedYear": "1995",
@@ -2057,7 +2070,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 159,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/70/4a/704aabd80759fc2438f1310c5b8af020.jpg",
     "title": "El Príncipe",
     "author": "Nicolás Maquiavelo",
     "publishedYear": "1980",
@@ -2070,7 +2083,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 160,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_664449-MLM44086027063_112020-O.webp",
     "title": "La Ejecutivas Salvajes",
     "author": "J.J More",
     "publishedYear": "1979",
@@ -2083,7 +2096,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 161,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/96d5a08e-7b9f-41f5-af17-58671c04a2d0/d_1200_1200/portada_el-misterio-del-tren-azul_agatha-christie_202106070928.webp",
     "title": "El Misterio Del Tren Azul",
     "author": null,
     "publishedYear": null,
@@ -2135,12 +2148,12 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 165,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.plutonediciones.com/site/wp-content/uploads/2018/07/Cuentos-de-la-Alhambra.jpg",
     "title": "Cuentos De La Alhambra",
-    "author": "Miguel Sánchez Editor",
+    "author": "Washington Irving",
     "publishedYear": "1980",
     "isbn": "84-7169-025-X",
-    "editorial": null,
+    "editorial": "Miguel Sánchez Editor",
     "language": "Español",
     "description": null,
     "genre": null,
@@ -2187,7 +2200,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 169,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/61IxwWi2-gL._SL1500_.jpg",
     "title": "Entre La Tierra Y El Cielo",
     "author": "Francisco Cándido Xavier",
     "publishedYear": "1989",
@@ -2200,7 +2213,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 170,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://edicion4.b-cdn.net/wp-content/uploads/2022/04/el-ideal-iniciatico_1-200x288.jpg.webp",
     "title": "El Ideal Iniciático",
     "author": "Oswald Wirth",
     "publishedYear": "1979",
@@ -2239,7 +2252,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 173,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1519917120i/20966143.jpg",
     "title": "Los Novios Tomo Ii",
     "author": "Alejandro Manzoni",
     "publishedYear": "1973",
@@ -2252,7 +2265,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 174,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/39/6f/396f282bf360d4e4a89227c9ff756c11.jpg",
     "title": "La Pimpinela Escarlata",
     "author": null,
     "publishedYear": "1982",
@@ -2369,7 +2382,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 183,
-    "coverImageUrl": null,
+    "coverImageUrl": "http://www.rettalibros.com/assets/material/big/47636.jpg",
     "title": "Pañol De Proa",
     "author": "Pedro Blas Julio Romero",
     "publishedYear": "2011",
@@ -2382,7 +2395,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 184,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreriaeldesvan.com/33362-large_default/manual-de-experimentos-parapsiquicos-3.jpg",
     "title": "Manual De Experimentos Parapsíquicos",
     "author": "Sheila Ostrander",
     "publishedYear": "1974",
@@ -2434,7 +2447,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 188,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://catalogo.uniquindio.edu.co/cgi-bin/koha/opac-image.pl?imagenumber=3893",
     "title": "Las Cuatro Claves Del Liderazgo Eficaz",
     "author": "Warren Bennis Y Burt Nanus",
     "publishedYear": "1985",
@@ -2473,7 +2486,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 191,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/mariposas-estan-tristes-libro.webp?fit=600%2C600&ssl=1",
     "title": "Las Mariposas Están Tristes",
     "author": "Alberto Duran Coronado",
     "publishedYear": "1986",
@@ -2486,7 +2499,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 192,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.cyber-corredera.de/correderas/84-Dateien/7_Libro.jpg",
     "title": "Del Rhin Al Magdalena",
     "author": "Juan Bernardo Elbers",
     "publishedYear": "2007",
@@ -2512,7 +2525,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 194,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://image.cdn0.buscalibre.com/3301842.__RS360x360__.jpg",
     "title": "En Busca De Bolivar",
     "author": "William Ospina",
     "publishedYear": "1829",
@@ -2590,7 +2603,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 200,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://image.cdn0.buscalibre.com/2221835.__RS360x360__.jpg",
     "title": "Rojo Y Negro I",
     "author": "Carlos Rivas",
     "publishedYear": "1985",
@@ -2616,7 +2629,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 202,
-    "coverImageUrl": null,
+    "coverImageUrl": "",
     "title": "La Muerte Del Gamonal",
     "author": "Joaquin Pizarro V.",
     "publishedYear": null,
@@ -2629,7 +2642,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 203,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-padre-casafus-otros-cuentos-norma.webp?fit=600%2C600&ssl=1",
     "title": "El Padre Casafus Y Otros Cuentos",
     "author": "Tomás Carrasquilla",
     "publishedYear": "1993",
@@ -2668,7 +2681,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 206,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_21916-MLA20221161289_012015-O.webp",
     "title": "El Hombre Toma El Mundo En Sus Manos",
     "author": "Sergei Rosanov",
     "publishedYear": "1945",
@@ -2681,7 +2694,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 207,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/ce/31/ce31ecc7c82b0696641579b916f17b44.jpg",
     "title": "El Algoritmo De La Felicidad",
     "author": "Mo Gawdat",
     "publishedYear": "2018",
@@ -2694,7 +2707,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 208,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/70/3d/703ddf66b506bf369186418109db5b69.jpg",
     "title": "Recuerdos Históricos Del Coronel Manuel Antonio Lopez",
     "author": null,
     "publishedYear": "1819-1826",
@@ -2772,7 +2785,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 214,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/90/d4/90d4354f32439540cfce27d0091e7fd2.jpg",
     "title": "El Desafío Mundial",
     "author": "Jean Jacques",
     "publishedYear": "1980",
@@ -2798,7 +2811,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 216,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/99/34/9934cfc339a31c17d1fe6c10c6a8c838.jpg",
     "title": "Ajeno A La Tierra",
     "author": "Juan Salvador Gaviota",
     "publishedYear": "1995",
@@ -2811,7 +2824,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 217,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://pictures.abebooks.com/inventory/12027595596.jpg",
     "title": "El Caballero De Las Amazonas",
     "author": "Miguel Albornoz",
     "publishedYear": "1968",
@@ -2824,7 +2837,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 218,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://editorial.udenar.edu.co/wp-content/uploads/2024/05/Captura-de-pantalla-2024-05-03-082326.png",
     "title": "Chambu",
     "author": "Guillermo Edmundo Chaves",
     "publishedYear": null,
@@ -2837,7 +2850,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 219,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://image.cdn1.buscalibre.com/2927285.__RS360x360__.jpg",
     "title": "Estudio Sobre La Conciencia",
     "author": "Annie Besant",
     "publishedYear": null,
@@ -2850,7 +2863,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 220,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/26/bd/26bd77da679d18432dbf8a087387c981.jpg",
     "title": "El Cordón De Plata",
     "author": null,
     "publishedYear": "1993",
@@ -2863,7 +2876,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 221,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/41Zuo1waZaL._AC_UF1000,1000_QL80_.jpg",
     "title": "Principios Rosacruces Para El Hogar Y Los Negocios",
     "author": "H.Spencer Lewis,Ph .D",
     "publishedYear": "1980",
@@ -2876,7 +2889,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 222,
-    "coverImageUrl": null,
+    "coverImageUrl": "http://danteaurbina.com/wp-content/uploads/2017/07/La-Iglesia-y-el-Liberalismo-PORTADA-212x300.jpg",
     "title": "Artículos Juaristas (Iglesia Y Liberalismo)",
     "author": "J.Jesus Eloy Vázquez Leos",
     "publishedYear": "2001",
@@ -2902,7 +2915,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 224,
-    "coverImageUrl": null,
+    "coverImageUrl": "http://www.rettalibros.com/assets/material/small/47636.jpg",
     "title": "Pañol De Proa",
     "author": "Pedro Blas Julio Romero",
     "publishedYear": "2011",
@@ -2915,7 +2928,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 225,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/68/56/6856b0f1e52b17f04050d97bf1d527ef.jpg",
     "title": "La Ciencia De Las Emociones",
     "author": "Bhagavan Das",
     "publishedYear": null,
@@ -2967,7 +2980,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 229,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://monteriaweb.tripod.com/imagenes/amador_vejez_productiva_01.jpg",
     "title": "Vejez Productiva Por La Dignidad Del Viejo",
     "author": "Augusto Soto Amador",
     "publishedYear": "2014",
@@ -3019,7 +3032,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 233,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/e8/c2/e8c2fda677682e2926c7ae4fbee84556.jpg",
     "title": "El General En Su Laberinto",
     "author": "Gabriel García Márquez",
     "publishedYear": "1989",
@@ -3084,7 +3097,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 238,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/90/85/9085607e34f8e79e6f76ad52353583bf.jpg",
     "title": "Diccionario Filosófico",
     "author": null,
     "publishedYear": "1994",
@@ -3097,7 +3110,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 239,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/c8/58/c858deb2b675b28cee41d7b25388caff.jpg",
     "title": "Carta Al Padre",
     "author": "Franz Kafka",
     "publishedYear": null,
@@ -3123,7 +3136,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 241,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_881270-MCO74372036524_022024-O.webp",
     "title": "Uribe Uribe ,Apartes Selectos De Su Obra",
     "author": "Julio Roberto Galindo H",
     "publishedYear": "1859-1914",
@@ -3149,7 +3162,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 243,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/c7/35/c73581adaf517390e1258bb762900bf3.jpg",
     "title": "Bolívar Patriota E Internacionalista",
     "author": "Alberto Lozano Cleves",
     "publishedYear": "1783-1983",
@@ -3162,8 +3175,8 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 244,
-    "coverImageUrl": null,
-    "title": "El Documento R",
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/6c/92/6c929a8a0e58ce8e2020dee22dc02663.jpg",
+    "title": "El Documento \"R",
     "author": "Irving Wallace",
     "publishedYear": "1976",
     "isbn": "84-226-0860-X",
@@ -3175,7 +3188,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 245,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.libreriacentral.co/imagenes/9789200/978920015298.JPG",
     "title": "El Rey De Hierro",
     "author": "Maurice Druon",
     "publishedYear": "1983",
@@ -3227,7 +3240,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 249,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cdn.agapea.com/Teosofica/uLTIMAS-TREINTA-VIDAS-DE-ALCIONE-LAS-i1n617127.jpg",
     "title": "Las Últimas Treinta Vidas De Alcione",
     "author": "C.W.Leadbeater",
     "publishedYear": "1958",
@@ -3292,7 +3305,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 254,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/86/8e/868e447f5e28d1f46911ad03a5f8583c.jpg",
     "title": "Enriquezca Su Vida",
     "author": "Rhona Rapoport Y Robert Rapoport",
     "publishedYear": "1979",
@@ -3305,7 +3318,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 255,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/8e/32/8e32d3af683d33f5de7aa3eed3d94093.jpg",
     "title": "Sadhana Un Camino De Oración",
     "author": "Antonio De Mello,S.J.",
     "publishedYear": "1991",
@@ -3331,7 +3344,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 257,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/41YERHYOGML._SY445_SX342_.jpg",
     "title": "Los Ángeles En La Vida Cotidiana",
     "author": "Mauro E.Lombardi",
     "publishedYear": "2008",
@@ -3370,7 +3383,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 260,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.unimeta.edu.co/cgi-bin/koha/opac-image.pl?imagenumber=17212",
     "title": "El Almirante José Padilla (Epopeya Y Martirio)",
     "author": "Jesus C.Torres Almeyda",
     "publishedYear": "1990",
@@ -3383,7 +3396,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 261,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/5f/ed/5feda004db5fd285d776606aa1bc3a35.jpg",
     "title": "Hay Días En Que Amanezco Muerto Cronicas",
     "author": "Cristian Valencia",
     "publishedYear": "2007",
@@ -3396,7 +3409,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 262,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/93/81/938179a86dd3a20fe674b239c509359c.jpg",
     "title": "El Poder Del Pensamiento Flexible",
     "author": "Walter Riso",
     "publishedYear": "2009",
@@ -3409,7 +3422,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 263,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://letraslibres.com/wp-content/uploads/2016/05/img_art_12374_4398.jpg.webp",
     "title": "El Olvido Que Seremos",
     "author": "Héctor Abad Faciolince",
     "publishedYear": "2012",
@@ -3435,7 +3448,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 265,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/c3/f3/c3f3f0b55d93aa2029d8c7e6290e9a5e.jpg",
     "title": "El El Puente Hacia El Infinito",
     "author": "Richard Bach",
     "publishedYear": "1984",
@@ -3448,7 +3461,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 266,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/d8/20/d820b66bdc5d7c57fe9aeb3981b1e056.jpg",
     "title": "Etica Nicomaquea",
     "author": "Aristóteles",
     "publishedYear": "1987",
@@ -3461,7 +3474,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 267,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71witcdav4L._SL1000_.jpg",
     "title": "Las Siete Grandes Religiones",
     "author": "Annie Besant",
     "publishedYear": null,
@@ -3487,7 +3500,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 269,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://image.cdn1.buscalibre.com/5b5ac036f4df7395508b4567.__RS360x360__.jpg",
     "title": "Los Regalos De Eykis",
     "author": "Dr.Wayne W.Dyer",
     "publishedYear": "1983",
@@ -3500,7 +3513,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 270,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cloud10.todocoleccion.online/libros-segunda-mano/tc/2020/07/30/09/213209891.webp",
     "title": "Lemuria El Continente Perdido Del Pacifico",
     "author": "Wisher S.Cerve",
     "publishedYear": "1959",
@@ -3513,7 +3526,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 271,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://static.serlogal.com/imagenes_big/9789584/978958420906.JPG",
     "title": "La Balada De Maria Abdala",
     "author": "Juan Gossaín",
     "publishedYear": "2003",
@@ -3526,7 +3539,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 272,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/ce/b7/ceb7e816a26498eeb8d260521d34c8f3.jpg",
     "title": "Delirio",
     "author": "Laura Restrepo",
     "publishedYear": "2004",
@@ -3539,7 +3552,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 273,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/68/d0/68d02fbf85505302ccf299707f0e483e.jpg",
     "title": "La Marquesa De Yolombó",
     "author": "Tomás Carrasquilla",
     "publishedYear": null,
@@ -3552,7 +3565,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 274,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/a1/80/a18046ce72abbd666cc0ff95fb654f56.jpg",
     "title": "Los Protocolos De Los Sabios De Sion",
     "author": "M.E.Jouin",
     "publishedYear": null,
@@ -3565,7 +3578,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 275,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/44/6b/446b596d0782911db223672ce273142a.jpg",
     "title": "Los Limites Del Amor",
     "author": "Riso Walter",
     "publishedYear": "2006",
@@ -3578,7 +3591,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 276,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/ed/a5/eda5fe94bf5265e37b726094441d3838.jpg",
     "title": "Anatomía De Un Instante",
     "author": "Javier Cercas",
     "publishedYear": "2009",
@@ -3604,7 +3617,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 278,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/72/19/7219206895a1d651afba0ff54a1d09f6.jpg",
     "title": "La Orgia Perpetua",
     "author": "Mario Vargas Llosa",
     "publishedYear": "2015",
@@ -3630,7 +3643,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 280,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/49/16/4916147fed9946f4365bd53e84de64df.jpg",
     "title": "El Principito",
     "author": "Antoine De Saint -Exupéry",
     "publishedYear": "1946",
@@ -3643,7 +3656,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 281,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/fc/bd/fcbd2ba617ca9078d1e254c2d35606fe.jpg",
     "title": "Vibraciones Mecánicas",
     "author": "Luis Umbert Santos",
     "publishedYear": "1986",
@@ -3656,7 +3669,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 282,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/6b/38/6b38c2b259f049982a280f58a10421b1.jpg",
     "title": "Historia De La Masonería",
     "author": "Iván Herrera Michel",
     "publishedYear": "2004",
@@ -3669,7 +3682,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 283,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/1b/b7/1bb748afdbcdbbc3bfe5c2f45c8ab5fa.jpg",
     "title": "El Maestro De Esgrima",
     "author": "Arturo Pérez Reverte",
     "publishedYear": "2007",
@@ -3695,7 +3708,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 285,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://goldeditorial.co/wp-content/uploads/2023/10/Vivencias-y-recuerdos-updated.png.webp",
     "title": "Vivencias Para El Recuerdo",
     "author": "Eladio Uparela Madrid",
     "publishedYear": "2012",
@@ -3708,7 +3721,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 286,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://image.cdn0.buscalibre.com/3328432.__RS360x360__.jpg",
     "title": "Tres Cuentos De Otoño",
     "author": "Javier Fernández De Castro",
     "publishedYear": "2008",
@@ -3721,7 +3734,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 287,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://panamericana.vtexassets.com/arquivos/ids/174538-800-auto?v=636209550927230000&width=800&height=auto&aspect=true",
     "title": "El Profeta Ebrio Y Otras Alucinaciones",
     "author": "Roberto Rubiano Vargas",
     "publishedYear": "2014",
@@ -3734,7 +3747,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 288,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/61msT5-2D0L._SL1298_.jpg",
     "title": "Ensayos Masónicos",
     "author": "Gran Logia",
     "publishedYear": "2005",
@@ -3773,7 +3786,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 291,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://simehbucket.s3.amazonaws.com/images/d358c2f3b76d34d9fa80e58a2e07d8cb-medium.jpg",
     "title": "El Rezago De La Costa Caribe Colombiana",
     "author": "Haroldo Calvo Stevenson",
     "publishedYear": "1999",
@@ -3786,7 +3799,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 292,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/02/ea/02ea2b1214f0e92222b66edf69b5edb7.jpg",
     "title": "Encuentros Con Hombres Notables",
     "author": "G.I.Gurdjieff",
     "publishedYear": "1977",
@@ -3812,7 +3825,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 294,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/97/2a/972a2498f31397a229fff767e57f98dd.jpg",
     "title": "La Agonía Del Cristianismo",
     "author": "Miguel De Unamuno",
     "publishedYear": "1961",
@@ -3825,7 +3838,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 295,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1508115340i/36420066.jpg",
     "title": "Incursiones En Lo Indecible",
     "author": "Thomas Merton",
     "publishedYear": "1967",
@@ -3838,7 +3851,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 296,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/62/24/6224751eee4ac344139017cc986b2da6.jpg",
     "title": "El Cine Era Mejor Que La Vida",
     "author": "Juan Diego Mejía",
     "publishedYear": "1996",
@@ -3851,7 +3864,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 297,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.unimeta.edu.co/cgi-bin/koha/opac-image.pl?thumbnail=1&imagenumber=17061",
     "title": "Soledad Roman De Nuñez Recuerdos",
     "author": "Daniel Lemaitre",
     "publishedYear": "1982",
@@ -3890,7 +3903,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 300,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cdn4-imgs.topmags.com/products/normal/extra/National-Geographic-en-Espanol-6.jpg",
     "title": "La Verdad Sobre Los Tiburones",
     "author": null,
     "publishedYear": "2007",
@@ -3903,7 +3916,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 301,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://rapealo.com/wp-content/uploads/2021/09/hiphop-planet-1.jpg",
     "title": "Cultura Hip Hop Como Se Apoderó Del Mundo",
     "author": null,
     "publishedYear": "2007",
@@ -3916,7 +3929,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 302,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://gabrielacolinbook.com/wp-content/uploads/2016/07/ng-sismo500px.jpg",
     "title": "El Próximo Sismo",
     "author": null,
     "publishedYear": "2006",
@@ -3929,7 +3942,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 303,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://imgv2-2-f.scribdassets.com/img/document/38610879/original/b0659ce24a/1?v=1",
     "title": "La Era Del Deshielo",
     "author": null,
     "publishedYear": "2007",
@@ -3942,7 +3955,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 304,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_718069-MLA48623798334_122021-O.webp",
     "title": "El Muro Incómodo",
     "author": null,
     "publishedYear": "2007",
@@ -3955,7 +3968,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 305,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_733969-MLA54970038997_042023-O.webp",
     "title": "África Cuna De La Historia Humana",
     "author": null,
     "publishedYear": "2005",
@@ -3968,7 +3981,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 306,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_905255-MLA44424445405_122020-O.webp",
     "title": "A 200 Años De Trafalgar",
     "author": null,
     "publishedYear": "2005",
@@ -3981,7 +3994,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 307,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51RR05WE9ZL._AC_SY445_.jpg",
     "title": "Huracanes Asesinos",
     "author": null,
     "publishedYear": "2006",
@@ -3994,7 +4007,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 308,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_970603-MLA49371228591_032022-O-mantidos-revista-national-geographic-en-espanol-2006.webp",
     "title": "Mantidos Armados Y Peligrosos",
     "author": null,
     "publishedYear": "2006",
@@ -4007,7 +4020,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 309,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_911253-MLA52534854620_112022-F.webp",
     "title": "La Isla Que El Tiempo Olvidó",
     "author": null,
     "publishedYear": "2005",
@@ -4046,7 +4059,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 312,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cloud10.todocoleccion.online/coleccionismo-revista-national-geographic/tc/2023/08/31/12/429322392.jpg",
     "title": "El Hijo Del Eslabón Perdido",
     "author": null,
     "publishedYear": "2006",
@@ -4059,7 +4072,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 313,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_678385-MLA70748902700_072023-O.webp",
     "title": "La Búsqueda De Otras Tierras",
     "author": null,
     "publishedYear": "2004",
@@ -4072,7 +4085,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 314,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_772501-MLM20338130375_072015-O-revista-national-geographic-la-gran-travesia-humana.webp",
     "title": "La Gran Travesía Humana Contada Por Nuestro Adn",
     "author": null,
     "publishedYear": "2006",
@@ -4085,7 +4098,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 315,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_692093-MLM45355333650_032021-F.webp",
     "title": "Carnaval El Color De La Libertad",
     "author": null,
     "publishedYear": "2005",
@@ -4098,7 +4111,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 316,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_850004-MLA72742031232_112023-O.webp",
     "title": "¿Hay Vida En Saturno?",
     "author": null,
     "publishedYear": "2007",
@@ -4111,7 +4124,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 317,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51R4YFG7Q4L._AC_SY445_.jpg",
     "title": "Se Venden Pandas",
     "author": null,
     "publishedYear": "2006",
@@ -4124,7 +4137,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 318,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81ZmkTEaueL._SL1500_.jpg",
     "title": "Conozcan A Tutankamon",
     "author": null,
     "publishedYear": "2005",
@@ -4137,8 +4150,8 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 319,
-    "coverImageUrl": null,
-    "title": "La Revolución Que Esta Esperando",
+    "coverImageUrl": "assets/portadas/ng-celulas.png",
+    "title": "Celulas Madre, La Revolución Que Esta Esperando",
     "author": null,
     "publishedYear": "2005",
     "isbn": "SGLNC-193",
@@ -4150,7 +4163,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 320,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.libertadreligiosa.org.ar/Fotos%20Generales/Articulo%20N%20G%201105/Nat%20Geo%201105%20tapa.jpg",
     "title": "En Busca De La Eterna Juventud",
     "author": null,
     "publishedYear": "2005",
@@ -4163,7 +4176,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 321,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_770225-MLA49480914956_032022-O.webp",
     "title": "La Bomba 60 años Después Quien La Posee,Quien La Desea",
     "author": null,
     "publishedYear": "2005",
@@ -4176,7 +4189,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 322,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_904567-MLA47274251833_082021-O.webp",
     "title": "Secretos De La Mente",
     "author": null,
     "publishedYear": "2005",
@@ -4215,7 +4228,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 325,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://media.vogue.es/photos/64490d0410c840bbe31ab9f6/2:3/w_1600,c_limit/the-story-of-art-pocket-edition-new-edition-sp-6671-overview-3000.jpg",
     "title": "Historia Del Arte",
     "author": null,
     "publishedYear": "1963",
@@ -4241,7 +4254,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 327,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://pictures.abebooks.com/inventory/30369209692.jpg",
     "title": "Libro Amarillo Documentos Diplomaticos",
     "author": null,
     "publishedYear": "1914",
@@ -4254,7 +4267,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 328,
-    "coverImageUrl": null,
+    "coverImageUrl": "",
     "title": "Orika La Gacela De La Madrugada",
     "author": "Antonio Prada Fortul",
     "publishedYear": "2003",
@@ -4267,7 +4280,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 329,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/7b/f0/7bf0b08059239cb713294e6e83071c5d.jpg",
     "title": "Yo,Claudio Claudio El Dios Y Su Esposa Mesalina",
     "author": null,
     "publishedYear": "1979",
@@ -4293,7 +4306,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 331,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.unimeta.edu.co/cgi-bin/koha/opac-image.pl?thumbnail=1&imagenumber=9194",
     "title": "Cuentas Claras",
     "author": "Germán Vargas Lleras",
     "publishedYear": "2001",
@@ -4306,7 +4319,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 332,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.tornamesa.co/imagenes_grandes/9789584/978958425677.GIF",
     "title": "Cuatro Años A Bordo De Mi Mismo",
     "author": "Eduardo Zalamea Borda",
     "publishedYear": "2011",
@@ -4319,7 +4332,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 333,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://pictures.abebooks.com/isbn/9788432047114-es.jpg",
     "title": "Como Llego El Papa A Ser Infalible",
     "author": "August Bernhard",
     "publishedYear": "1980",
@@ -4332,7 +4345,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 334,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/ca/94/ca9495e1fbc5fa0a8a390ae8e02def17.jpg",
     "title": "La Investigación De La Comunidad",
     "author": "Guillermo Briones",
     "publishedYear": "1998",
@@ -4345,7 +4358,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 335,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.penguinlibros.com/co/1667327-thickbox_default/el-capitan-alatriste-las-aventuras-del-capitan-alatriste-1.jpg",
     "title": "El Capitán Alatriste",
     "author": "Arturo Y Carlota Pérez Reverte",
     "publishedYear": "1999",
@@ -4371,7 +4384,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 337,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.konradlorenz.edu.co/cgi-bin/koha/opac-imageviewer.pl?biblionumber=15904",
     "title": "Quinientas Horas De Angustia Al Borde De La Muerte",
     "author": "Hector Horacio Bohorquez C",
     "publishedYear": "2002",
@@ -4384,7 +4397,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 338,
-    "coverImageUrl": null,
+    "coverImageUrl": "http://www.rettalibros.com/assets/material/small/46251.jpg",
     "title": "Bicentenario Hechos Y Personajes De La Región Caribe",
     "author": "Félix Manzur Luis Mendoza",
     "publishedYear": "2010",
@@ -4397,7 +4410,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 339,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://media.istockphoto.com/id/625371324/photo/dictionary.jpg?s=612x612&w=0&k=20&c=7-kJOkUL6GIem2yjn8IBt5K2P4IPAXDXCxkeUMujxNk=",
     "title": "Dictionary",
     "author": null,
     "publishedYear": "1953",
@@ -4410,7 +4423,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 340,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/BriefHistoryTime.jpg/250px-BriefHistoryTime.jpg",
     "title": "A Brief History Of Time",
     "author": "Stephen Hawking",
     "publishedYear": "1988",
@@ -4423,7 +4436,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 341,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/b1/48/b148e1cc215cf76c4d0f3c2bc1255e82.jpg",
     "title": "El Nuevo Codigo Secreto De La Biblia",
     "author": "Michael Drosnin",
     "publishedYear": "2003",
@@ -4436,7 +4449,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 342,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://image.cdn1.buscalibre.com/2829741.__RS360x360__.jpg",
     "title": "Camino De Sueños",
     "author": "Albeiro Yepez Meneses",
     "publishedYear": "2001",
@@ -4449,7 +4462,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 343,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libromar.cl/4023-thickbox_default/derecho-internacional-maritimo.jpg",
     "title": "Derecho Internacional Marítimo",
     "author": "C.John Colombos",
     "publishedYear": "1959",
@@ -4475,7 +4488,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 345,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/41D1p41MWVL._SY385_.jpg",
     "title": "Socialismo De La Lucha De Clases Al Estado Providencia",
     "author": "Iring Fetscher",
     "publishedYear": "1968",
@@ -4488,7 +4501,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 346,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/71/c8/71c843dad6972d11c192abf2287d9b98.jpg",
     "title": "Capitalismo De Manchester A Wall Street",
     "author": "Diether Stolze",
     "publishedYear": "1969",
@@ -4501,7 +4514,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 347,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cdn.kobo.com/book-images/669a89ca-deee-4df4-a1e5-cf7fca056c5c/353/569/90/False/dianetics-the-modern-science-of-mental-health-2.jpg",
     "title": "Dianética La Ciencia Moderna De La Salud Mental",
     "author": "L Ronald Hubbard",
     "publishedYear": "2007",
@@ -4527,7 +4540,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 349,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.etp.com.py/img/tapa-mediana-275694.jpg",
     "title": "El Poder De La Triada",
     "author": "Kenichi Ohmae",
     "publishedYear": "1990",
@@ -4540,7 +4553,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 350,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.rctienda.com/wp-content/uploads/2024/01/Estatutos-RC.jpg",
     "title": "Estatutos Generales Reglamentos",
     "author": "Gran Logia",
     "publishedYear": "2009",
@@ -4553,7 +4566,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 351,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-multiculturalismo-la-politica-del-reconocimiento.webp?fit=600%2C600&ssl=1",
     "title": "El Multiculturalismo Y La Política",
     "author": "Steven C.Michael Walzer",
     "publishedYear": "1992",
@@ -4579,7 +4592,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 353,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/32/b2/32b2e644d2ecf2ffe854f9f67e96a39c.jpg",
     "title": "Las Claves Del Codigo Da Vinci",
     "author": "Lorenzo Fernandez Bueno",
     "publishedYear": "2004",
@@ -4592,7 +4605,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 354,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://catalogo.uniquindio.edu.co/cgi-bin/koha/opac-image.pl?thumbnail=1&imagenumber=20509",
     "title": "Contabilidad Integral  Teoría Y Normalizacion",
     "author": "Rafael Franco Ruiz",
     "publishedYear": "1989",
@@ -4618,7 +4631,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 356,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreriatemis.com/wp-content/uploads/2020/09/06-562-0020.jpg",
     "title": "Coleccion De Estudios Socio -Jurídicos",
     "author": "Mario Alario D´Filippo",
     "publishedYear": "2003",
@@ -4644,7 +4657,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 358,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://manuelrodriguezbecerra.com/wp-content/uploads/2022/08/Tommo-II-36.png",
     "title": "Memoria Del Primer Ministro Del Medio Ambiente",
     "author": "Manuel Rodriguez",
     "publishedYear": "1994",
@@ -4657,7 +4670,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 359,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://letraslibres.com/wp-content/uploads/2016/05/img_art_13428_5451.jpg.webp",
     "title": "La Casa De Dostoievsky",
     "author": "Jorge Edwards",
     "publishedYear": "2008",
@@ -4670,7 +4683,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 360,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://edicioneshispanicas.com/wp-content/uploads/9789807716376.jpg.webp",
     "title": "El Hombre Que Calcula",
     "author": "Malba Tahan",
     "publishedYear": null,
@@ -4696,7 +4709,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 362,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.unimeta.edu.co/cgi-bin/koha/opac-image.pl?imagenumber=10893",
     "title": "Estatuto Municipal",
     "author": null,
     "publishedYear": "1995",
@@ -4709,7 +4722,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 363,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://panamericana.vtexassets.com/arquivos/ids/463645-800-auto?v=638028459803800000&width=800&height=auto&aspect=true",
     "title": "Constitución Política De Colombia",
     "author": null,
     "publishedYear": "1996",
@@ -4722,7 +4735,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 364,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.alianzaeditorial.es/imagenes/libros/grande/9788413621791-nuestra-senora-de-paris.jpg",
     "title": "Nuestra Señora De París",
     "author": "Victor Hugo",
     "publishedYear": "1970",
@@ -4735,7 +4748,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 365,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/da/5a/da5a203af341b5aaf557c356c0b24693.jpg",
     "title": "El Criterio",
     "author": "Jaime Balmes",
     "publishedYear": "1968",
@@ -4748,7 +4761,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 366,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_844823-MLM73023054582_112023-O-debate-sobre-el-liberalismo-politico-habermas-y-rawls.webp",
     "title": "Debate Sobre El Liberalismo Político",
     "author": "Jürgen Habermas",
     "publishedYear": "1998",
@@ -4761,7 +4774,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 367,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/a8/36/a836eece3ff1fecd9424414288190b46.jpg",
     "title": "El Origen De La Familia ,La Propiedad Privada Y El Estado",
     "author": "Friedrich Engels",
     "publishedYear": "1999",
@@ -4774,7 +4787,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 368,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/f6/2c/f62c1a9751a8504fced93be3f09722a2.jpg",
     "title": "Avances En Terapia Familiar Sistémica",
     "author": "Jose Navarro Gongora",
     "publishedYear": "1995",
@@ -4813,7 +4826,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 371,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://unibac.edu.co/webnueva/wp-content/uploads/2022/05/LIBRO-BA.jpg",
     "title": "Bellas Artes Como Historia De Cartagena",
     "author": "Sacra Norma Nader David",
     "publishedYear": "1889",
@@ -4852,7 +4865,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 374,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.rolalibros.com/1980-large_default/beethoven.jpg",
     "title": "Protagonista De La Civilización Beethoven",
     "author": "Marianna Basile",
     "publishedYear": "1980",
@@ -4865,7 +4878,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 375,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_907263-MCO50683997213_072022-O.webp",
     "title": "Protagonistas De La Civilización Luis Xiv",
     "author": "Claudio Menegazzi",
     "publishedYear": "1983",
@@ -4878,7 +4891,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 376,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.librosambigu.com/static/img/portadas/protagonistas-de-la-civilizacion-cesar_800064858.JPG",
     "title": "Protagonistas De La Civilización Cesar",
     "author": "Valentina Beggio",
     "publishedYear": "1981",
@@ -4891,7 +4904,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 377,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://pictures.abebooks.com/inventory/12417331507.jpg",
     "title": "Protagonistas De La Civilización Napoleon",
     "author": "Luigi Roma",
     "publishedYear": "1980",
@@ -4904,7 +4917,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 378,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_2X_816166-MLV47093565943_082021-F.webp",
     "title": "Protagonistas De La Civilización Alejandro Magno",
     "author": "Massimo Grillandi",
     "publishedYear": "1981",
@@ -4917,7 +4930,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 379,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/31XPeFSMRlL.jpg",
     "title": "Protagonistas De La Civilización Mahoma",
     "author": "Sergio Jona",
     "publishedYear": "1980",
@@ -4930,7 +4943,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 380,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/27/82/27823a3d876e9c8da7ef9974aaec78f6.jpg",
     "title": "Gran Historia De La Música",
     "author": "Johann Sebastian Bach",
     "publishedYear": "1983-1985",
@@ -4982,7 +4995,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 384,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/71MIfPL9ADL._AC_SL1234_.jpg",
     "title": "Santuarios Salvajes",
     "author": "Angel Lucia",
     "publishedYear": "1992",
@@ -5021,7 +5034,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 387,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreria-alzofora.com/wp-content/uploads/2023/02/PRODIGIOS-DE-LA-NATURALEZA-158076.jpg",
     "title": "Prodigios De La Naturaleza",
     "author": "Juan Maria Martinez",
     "publishedYear": "1993",
@@ -5047,7 +5060,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 389,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://puntoscolombia.vtexassets.com/arquivos/ids/25556503-800-auto?v=638380069739400000&width=800&height=auto&aspect=true",
     "title": "Historia Del Arte Colombiano",
     "author": null,
     "publishedYear": "1977",
@@ -5073,7 +5086,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 391,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51YZz6VcirL._SX342_SY445_.jpg",
     "title": "El Canal De Panamá",
     "author": "Gonzalo Martínez Azumendi",
     "publishedYear": "1999",
@@ -5125,7 +5138,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 395,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://alsum.co/wp-content/uploads/2018/07/Manual-de-seguros-de-transporte-alsum-libro-blanco_Mesa-de-trabajo-1.jpg",
     "title": "Manual De Derecho Del Seguro Marítimo",
     "author": "Santiago Zabaleta Sarasua",
     "publishedYear": "1993",
@@ -5138,7 +5151,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 396,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://simehbucket.s3.amazonaws.com/images/43150080ba262e4ec25b05d90e5ab3a5-large.jpg",
     "title": "Estudios De Derecho Marítimo",
     "author": "Jose Luis Rodriguez Carrion",
     "publishedYear": "1992",
@@ -5151,7 +5164,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 397,
-    "coverImageUrl": null,
+    "coverImageUrl": "http://www.scielo.org.bo/img/revistas/rjd/v10n15/a04.png",
     "title": "Ciudadanía Multicultural",
     "author": null,
     "publishedYear": "1996",
@@ -5164,7 +5177,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 398,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_924310-MCO71126848623_082023-O.webp",
     "title": "Libro De Oro",
     "author": "Julio Roberto Galindo",
     "publishedYear": "1923-2005",
@@ -5177,7 +5190,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 399,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://acdn-us.mitiendanube.com/stores/081/038/products/f4221cfa-a927-46cd-9eb2-5bd6b77f4f9d1-b922adbccfaaaa499216668085939504-1024-1024.jpeg",
     "title": "Curso De Derecho De La Navegación",
     "author": null,
     "publishedYear": null,
@@ -5190,7 +5203,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 400,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-el-libro-de-oro-de-bolivar-con-portada-bedout.webp.webp?fit=800%2C800&ssl=1",
     "title": "El Libro De Oro De Bolivar",
     "author": "Cornelio Hispano",
     "publishedYear": "1830-1980",
@@ -5203,7 +5216,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 401,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://coffeenjesus.com/cdn/shop/products/91xlUi_MyL_453x700.jpg?v=1653786128",
     "title": "Buenos Dias Espiritu Santo",
     "author": "Benny Hinn",
     "publishedYear": "1990",
@@ -5216,7 +5229,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 402,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/a0/dc/a0dc6532eee605dda76ee672bb61f205.jpg",
     "title": "Diario De Un Mago",
     "author": "Paulo Coelho",
     "publishedYear": "1997",
@@ -5229,7 +5242,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 403,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/41hP+5HfV1L._SY445_SX342_.jpg",
     "title": "El Ayer Tiene Mucho Que Decir",
     "author": "Ralph Lewis",
     "publishedYear": "1973",
@@ -5255,7 +5268,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 405,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://pics.filmaffinity.com/lady_chatterley_s_lover-917751008-large.jpg",
     "title": "El Amante De Lady Chatterley",
     "author": "D.H Lawrence",
     "publishedYear": "1979",
@@ -5268,7 +5281,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 406,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/d8/20/d820b66bdc5d7c57fe9aeb3981b1e056.jpg",
     "title": "Etica Nicomaquea",
     "author": null,
     "publishedYear": null,
@@ -5281,7 +5294,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 407,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cdn.zendalibros.com/wp-content/uploads/el-jugador-dostoievski-fernando-vicente.jpg",
     "title": "El Jugador",
     "author": "Fiodor Dostoievski",
     "publishedYear": "2001-2002",
@@ -5294,7 +5307,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 408,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://imag.lecturalia.com/img/libro/los-caminos-de-la-libertad-15334.jpg",
     "title": "Los Caminos De La Libertad",
     "author": "Bertrand Russell",
     "publishedYear": "1950",
@@ -5320,7 +5333,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 410,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreriatemis.com/wp-content/uploads/2020/10/13-059-0146.jpg",
     "title": "Teoria Pura Del Derecho",
     "author": "Hans Kelsen",
     "publishedYear": "1953",
@@ -5333,7 +5346,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 411,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreriatemis.com/wp-content/uploads/2020/09/10-023-0051.jpg",
     "title": "La Libertad Condicional",
     "author": "Pedro P Vargas Vargas",
     "publishedYear": "1998",
@@ -5346,7 +5359,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 412,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/ee/c3/eec3e10bb18c43e4a4279f574e1898fb.jpg",
     "title": "La Ciencia Su Metodo Y Su Filosofía",
     "author": "Mario Bunge",
     "publishedYear": "1994",
@@ -5359,7 +5372,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 413,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/5f/96/5f969364c197fd25957a8bcabab6c144.jpg",
     "title": "Legislación Aduanera",
     "author": null,
     "publishedYear": "1984",
@@ -5372,7 +5385,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 414,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://cienciapolitica.usac.glifos.net/portadas/cover/cedec8755.jpg",
     "title": "La Música . Y La Evolución Humana",
     "author": "Cyril Scott",
     "publishedYear": "1989",
@@ -5385,7 +5398,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 415,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/9138JaNBkwL._SL1500_.jpg",
     "title": "No Hay Amor Mas Grande",
     "author": null,
     "publishedYear": "1979",
@@ -5398,7 +5411,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 416,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.organojudicial.gob.pa/cgi-bin/koha/opac-image.pl?thumbnail=1&imagenumber=3212",
     "title": "Panama La Lucha Gigantesca De Un País Pequeño",
     "author": "Luis Gaspar ¨Toti\" Suarez",
     "publishedYear": "1990",
@@ -5411,7 +5424,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 417,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/ae/de/aede3efbc90523af644af506fca356f1.jpg",
     "title": "La Sabiduría De Los Ancianos",
     "author": "Lobsang Rampa",
     "publishedYear": "1966-1991",
@@ -5424,7 +5437,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 418,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.unimeta.edu.co/cgi-bin/koha/opac-image.pl?imagenumber=17073",
     "title": "La Siempreviva Del Libertador",
     "author": "Luis Roncallo Fandiño",
     "publishedYear": "2003",
@@ -5450,7 +5463,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 420,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/61p1-T7UioL._SL1499_.jpg",
     "title": "Rito Escoces Antiguo Y Aceptado De La Francmasonería",
     "author": null,
     "publishedYear": "2006",
@@ -5515,7 +5528,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 425,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://covers.odilo.io/public/OdiloPlace_Bookwire_E8145/9781939048912_ORIGINAL.jpg",
     "title": "Los Pasos Perdidos",
     "author": "Alejo Carpentier",
     "publishedYear": "2001",
@@ -5528,7 +5541,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 426,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/41P5Bwyb4VL._SY445_SX342_.jpg",
     "title": "La Fuga Del Esplendor",
     "author": "Ruben Dario Alvarez Pacheco",
     "publishedYear": "2013",
@@ -5541,7 +5554,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 427,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://salutsexual.sidastudi.org/resources/inmagic-img/IM17665.jpg",
     "title": "Estudio De La Sexualidad Femenina",
     "author": null,
     "publishedYear": "1976",
@@ -5554,7 +5567,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 428,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-el-conformista-moravia-oveja-muy-bueno.webp?fit=800%2C800&ssl=1",
     "title": "Obras Maestras Del Siglo Xx",
     "author": "Graham Greene",
     "publishedYear": "1940",
@@ -5580,7 +5593,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 430,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://imag.lecturalia.com/img/libro/los-caminos-de-la-libertad-15334.jpg",
     "title": "Los Caminos De La Libertad",
     "author": "Bertrand Russell",
     "publishedYear": "1961",
@@ -5606,7 +5619,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 432,
-    "coverImageUrl": null,
+    "coverImageUrl": "",
     "title": "El Gran Descubrimiento",
     "author": "Azriel Eisenberg",
     "publishedYear": "1958",
@@ -5619,7 +5632,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 433,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.rae.es/sites/default/files/styles/obra_portada_ficha/public/portada_colmena_ed._conmemorativa.jpg?itok=fhYb9H8I",
     "title": "La Colmena",
     "author": "Camilo José Cela",
     "publishedYear": "2002",
@@ -5671,7 +5684,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 437,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51PB+ZI5xYL._SY445_SX342_.jpg",
     "title": "Manual For Process Engineering Calculations",
     "author": "Carlos Verhelst Berrocal",
     "publishedYear": "1975",
@@ -5736,7 +5749,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 442,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1394997133i/7605815.jpg",
     "title": "Engineering Experimentation",
     "author": null,
     "publishedYear": "1966",
@@ -5749,7 +5762,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 443,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/ab/59/ab5912ee9d3c80d1229cdd4518bd9175.jpg",
     "title": "El Mago De Lublin",
     "author": "Isaac Bashevis Singer",
     "publishedYear": "1978",
@@ -5762,7 +5775,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 444,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/d5/88/d58811b84eb3ef669ff418108bae6eb0.jpg",
     "title": "El Innombrable",
     "author": "Samuel Beckett",
     "publishedYear": "1969",
@@ -5775,7 +5788,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 445,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://elarbollibreriadeuso.com.mx/cdn/shop/products/IMG_20210812_165228_1024x1024@2x.jpg?v=1628815705",
     "title": "Barrabás Y Otros Relatos",
     "author": "Par Lagerkvist",
     "publishedYear": "1951",
@@ -5788,7 +5801,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 446,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-mithistorima-y-otros-poemas-orbis.webp?fit=800%2C800&ssl=1",
     "title": "Mithistorima Y Otros Poemas",
     "author": "Yorgos Seferis",
     "publishedYear": "1963",
@@ -5801,7 +5814,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 447,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-dignum-est-orbis.webp?fit=800%2C800&ssl=1",
     "title": "Dignum Est",
     "author": "Odiseas Elitis",
     "publishedYear": "1979",
@@ -5814,7 +5827,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 448,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/4c/82/4c826e181f76f0b904505df2cee32401.jpg",
     "title": "El Poder Cambia De Manos",
     "author": "Czesław Miłosz",
     "publishedYear": "1980",
@@ -5827,7 +5840,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 449,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/ed/55/ed55169572eabd35eafd260d2fbb5113.jpg",
     "title": "La Casa De Las Bellas Durmientes",
     "author": "Yasunari Kawabata",
     "publishedYear": "1968",
@@ -5840,7 +5853,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 450,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://booksflea.com/wp-content/uploads/2021/08/798852951.jpg",
     "title": "Torotumbo Y Otras Obras",
     "author": "Miguel Angel Asturias",
     "publishedYear": "1967",
@@ -5853,8 +5866,8 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 451,
-    "coverImageUrl": null,
-    "title": "Huésped Para Una Noche",
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/96/74/967447d96f7a167451133d2fd229ef18.jpg",
+    "title": "",
     "author": "S.J.Agnon",
     "publishedYear": "1966",
     "isbn": "84-7530-155-X",
@@ -5866,8 +5879,8 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 452,
-    "coverImageUrl": null,
-    "title": "La Arquitectura En La República",
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/96/74/967447d96f7a167451133d2fd229ef18.jpg",
+    "title": "Huésped Para Una Noche",
     "author": null,
     "publishedYear": "1986",
     "isbn": "958-95013-9-8",
@@ -5879,7 +5892,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 453,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_885327-MCO72998496741_112023-O.webp",
     "title": "Historia Extensa De Colombia",
     "author": null,
     "publishedYear": "1965",
@@ -5892,7 +5905,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 454,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/6c/6c/6c6c8e90cfb66ec6629818b7f8a1d7fb.jpg",
     "title": "Un Dia En La Vida De Ivan Denisovich",
     "author": "Alexander Soljenitsin",
     "publishedYear": "1970",
@@ -5918,7 +5931,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 456,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/76/3a/763a82a9e328abf12db9e4330a9a8b2c.jpg",
     "title": "Era El Año 1914 Aquí Tienes Tu Vida",
     "author": "Eyvind Johnson",
     "publishedYear": "1974",
@@ -5931,7 +5944,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 457,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.penguinlibros.com/co/1692691-thickbox_default/la-peste.jpg",
     "title": "La Peste",
     "author": "Albert Camus",
     "publishedYear": "1957",
@@ -5944,7 +5957,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 458,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-la-puta-respetuosa-a-puerta-cerrada-jean-paul-sartre-orbis.webp?fit=800%2C800&ssl=1",
     "title": "La Puta Respetuosa A Puerta Cerrada",
     "author": "Jean Paul Sartre",
     "publishedYear": "1964",
@@ -5957,7 +5970,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 459,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/66/6a/666a5097b63c839b2e5087e0d2fe2409.jpg",
     "title": "Un Puente Sobre El Drina",
     "author": "Ivo Andric",
     "publishedYear": "1961",
@@ -5971,7 +5984,7 @@ export const staticBookList: IBook[] = [
   {
     "id": 460,
     "coverImageUrl": null,
-    "title": "El Doctor Jivago",
+    "title": "",
     "author": "Boris L.Pasternak",
     "publishedYear": "1958",
     "isbn": "84-7530-136-3",
@@ -5983,7 +5996,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 461,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://i0.wp.com/incunabula.co/wp-content/uploads/libro-el-carro-de-los-elegidos-orbis.webp?fit=800%2C800&ssl=1",
     "title": "El Carro De Los Elegidos",
     "author": "Patrick White",
     "publishedYear": "1973",
@@ -5996,7 +6009,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 462,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/1b/1f/1b1fd04d21a3e4233ca265f9a86538e1.jpg",
     "title": "Antologia Esencial",
     "author": "Vicente Aleixandre",
     "publishedYear": "1977",
@@ -6022,7 +6035,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 464,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/57/21/5721556b0e0acada023fd742291b7968.jpg",
     "title": "Huesos De Sepia Y Otros Poemas",
     "author": "Eugenio Montale",
     "publishedYear": "1975",
@@ -6035,7 +6048,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 465,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/8d/22/8d229d697aa5ef9d95ebbcd95c8bb2ed.jpg",
     "title": "¿Dónde Estabas,Adán?",
     "author": "Heinrich Boll",
     "publishedYear": "1972",
@@ -6048,7 +6061,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 466,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/c7/fb/c7fb05e829a486f85fdc5294f02b4510.jpg",
     "title": "Lucharon Por La Patria",
     "author": "Mijail Sholojov",
     "publishedYear": "1965",
@@ -6061,7 +6074,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 467,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/ad/ce/adcefe09deb93a1ebe3d7883d0469921.jpg",
     "title": "Antología General",
     "author": "Juan Ramon Jimenez",
     "publishedYear": "1956",
@@ -6074,7 +6087,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 468,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/53/74/537471fa6051f5805eb69b091bea9efd.jpg",
     "title": "Y Enseguida Anochece Y Otros Poemas",
     "author": "Salvatore Quasimodo",
     "publishedYear": "1959",
@@ -6087,7 +6100,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 469,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/30/5c/305c17600e58e4264102f8f7b09075cb.jpg",
     "title": "Anábasis Y Otros Poemas",
     "author": "Saint John Perse",
     "publishedYear": "1960",
@@ -6100,7 +6113,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 470,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://eltrasterodepalacio.wordpress.com/wp-content/uploads/2013/03/sin-tc3adtulo-1.jpg?w=243&h=385",
     "title": "Nudo De Víboras",
     "author": "Francois Mauriac",
     "publishedYear": "1952",
@@ -6113,7 +6126,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 471,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://imagessl7.casadellibro.com/a/l/s7/27/9788490622827.webp",
     "title": "Adiós A Las Armas",
     "author": "Ernest Hemingway",
     "publishedYear": "1954",
@@ -6126,7 +6139,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 472,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://incunabula.co/wp-content/uploads/libro-paraiso-reclamado-orbis.webp",
     "title": "Paraíso Reclamado",
     "author": "Halldor Laxness",
     "publishedYear": "1955",
@@ -6152,7 +6165,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 474,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Canto_General_-_Neruda.jpg/250px-Canto_General_-_Neruda.jpg",
     "title": "Canto General",
     "author": "Pablo Neruda",
     "publishedYear": "1971",
@@ -6165,7 +6178,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 475,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/f5/ad/f5ad2438dddfd05f029f1f72c545665a.jpg",
     "title": "Al Este Del Eden",
     "author": "John Steinbeck",
     "publishedYear": "1962",
@@ -6178,7 +6191,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 476,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://tercerafundacion.net/imagenes/portada/P-00016538.jpg",
     "title": "Los Caminantes Del Cielo",
     "author": "Antonio Mora Vélez",
     "publishedYear": "1999",
@@ -6191,7 +6204,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 477,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/a1/66/a1660ef882e129019f964a3aed2f31d8.jpg",
     "title": "Introducción Al Estudio De La Kabala",
     "author": "W. Wynn Westcott",
     "publishedYear": "1980",
@@ -6204,7 +6217,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 478,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/60/f1/60f1f81bd7586d65451c4551311c4979.jpg",
     "title": "El Poder Del Ahora",
     "author": "Eckhart Tolle",
     "publishedYear": "2000",
@@ -6217,7 +6230,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 479,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_684837-MCO27306293340_052018-O.webp",
     "title": "El Proceso Del Capitalismo En Colombia",
     "author": "Mario Arango Jaramillo",
     "publishedYear": "1985",
@@ -6230,7 +6243,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 480,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://simehbucket.s3.amazonaws.com/images/a43a8974b98583f5163181f5fd11553d-medium.jpg",
     "title": "Influencia Revolucionaria De La Masoneria En Europa Y América",
     "author": "Julio Hoenigsberg",
     "publishedYear": "1999",
@@ -6256,7 +6269,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 482,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://isae.metacatalogo.org/cgi-bin/koha/opac-image.pl?thumbnail=1&imagenumber=1368",
     "title": "La Investigación Social Y Educativa",
     "author": "Guillermo Briones",
     "publishedYear": "1997",
@@ -6282,7 +6295,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 484,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://incunabula.co/wp-content/uploads/perestroika_pensamiento_pais_mundo_oveja_negra.png",
     "title": "Nuevo Pensamiento Para Mi País Y El Mundo",
     "author": null,
     "publishedYear": "1987",
@@ -6308,7 +6321,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 486,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://libreriatemis.com/wp-content/uploads/2023/09/02-000-0027.jpg",
     "title": "Codigo Disciplinario Unico",
     "author": null,
     "publishedYear": "2007",
@@ -6334,7 +6347,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 488,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_741504-MCO50681423646_072022-O.webp",
     "title": "Reportaje De La Historia",
     "author": null,
     "publishedYear": "1979-1982",
@@ -6347,7 +6360,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 489,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://pictures.abebooks.com/inventory/md/md4903088482.jpg",
     "title": "Manual Del Contralor",
     "author": null,
     "publishedYear": "1985",
@@ -6360,7 +6373,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 490,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/73/6c/736cfee9b41c76f79b9d4df992ec6431.jpg",
     "title": "Diccionario De Filosofía Q-Z",
     "author": null,
     "publishedYear": "1994",
@@ -6373,7 +6386,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 491,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/21SDf-sHvGL.jpg",
     "title": "Diccionario De Filosofía K-P",
     "author": null,
     "publishedYear": "1994",
@@ -6386,7 +6399,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 492,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/722e34fb-bbad-495f-b6b9-68aed4a8184e/d_360_620/936001.webp",
     "title": "Diccionario De Filosofía  A-D",
     "author": null,
     "publishedYear": "1994",
@@ -6399,7 +6412,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 493,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81dIoRttT8L._SY425_.jpg",
     "title": "Diccionario De Filosofía E-J",
     "author": null,
     "publishedYear": "1994",
@@ -6412,7 +6425,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 494,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://http2.mlstatic.com/D_NQ_NP_600781-MCO43231252012_082020-O.webp",
     "title": "Nueva  Historia De Colombia",
     "author": "Jaime Jaramillo Uribe",
     "publishedYear": "1989",
@@ -6529,7 +6542,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 503,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn1.buscalibre.com/fit-in/360x360/76/e0/76e0dff59aa58301fdb1740f6abf75a1.jpg",
     "title": "Las Causales De Inculpabilidad",
     "author": "Jesus Ignacio Garcia Valencia",
     "publishedYear": "1994",
@@ -6555,7 +6568,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 505,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/e6/76/e67601b7d717df1400514a38a48ba55f.jpg",
     "title": "El Libro Tibetano De Los Muertos",
     "author": "Carlos A.Petschek",
     "publishedYear": "1979",
@@ -6568,7 +6581,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 506,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://simehbucket.s3.amazonaws.com/images/a43a8974b98583f5163181f5fdbe7f9d-large.jpg",
     "title": "El Olimpo Radical",
     "author": "Rodríguez Piñeres",
     "publishedYear": "1950",
@@ -6594,7 +6607,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 508,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://incunabula.co/wp-content/uploads/perdonar_urano.png",
     "title": "Perdonar Una Decisión Valiente Que Nos Trae Paz Interior",
     "author": "Robin Casarjian",
     "publishedYear": "1994",
@@ -6607,7 +6620,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 509,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/61IYPFSwi9L._SY425_.jpg",
     "title": "Nuevas Voces De Fin De Siglo",
     "author": "Juan Revelo Revelo",
     "publishedYear": "1999",
@@ -6620,7 +6633,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 510,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/e7/54/e754599b3ed6971d0e63498c8cabfedf.jpg",
     "title": "Un Hombre Diáfano Simon Bolivar",
     "author": "Dora Castellanos",
     "publishedYear": "1999",
@@ -6659,7 +6672,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 513,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://biblioteca.unimeta.edu.co/cgi-bin/koha/opac-image.pl?thumbnail=1&imagenumber=17073",
     "title": "La Siempreviva Del Libertador",
     "author": "Luis Roncallo Fandiño",
     "publishedYear": "2003",
@@ -6685,7 +6698,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 515,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://imagessl4.casadellibro.com/a/l/s7/84/9788408110484.webp",
     "title": "Toma Un Cafe Contigo Mismo",
     "author": "Walter Dresel",
     "publishedYear": "2003",
@@ -6737,7 +6750,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 519,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.retinalatina.org/wp-content/uploads/2020/08/po-vidaabordo-230x325.png",
     "title": "Una Vida A Bordo Del Puerto",
     "author": "Antonio Prada Fortul",
     "publishedYear": "1999",
@@ -6763,7 +6776,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 521,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://bibliotecacorteidh.winkel.la/content/images/thumbs/0000994_derecho-masonico_550.png",
     "title": "Derecho Masónico",
     "author": "Rodolfo Mantilla Jacome",
     "publishedYear": "2015",
@@ -6776,7 +6789,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 522,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51mmOaT1REL._SY445_SX342_.jpg",
     "title": "Pláticas Sobre El Sendero Del Ocultismo",
     "author": "Annie Besant",
     "publishedYear": "1964",
@@ -6815,7 +6828,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 525,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://proassetspdlcom.cdnstatics2.com/usuaris/libros/thumbs/fc596df1-d5f1-4313-add7-02d0e3a7325b/d_360_620/9788408074113.webp",
     "title": "Cerebro",
     "author": "Robin Cook",
     "publishedYear": "1981",
@@ -6854,8 +6867,8 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 528,
-    "coverImageUrl": null,
-    "title": "Perfiles Masónicos",
+    "coverImageUrl": "https://biblioteca.unimeta.edu.co/cgi-bin/koha/opac-image.pl?thumbnail=1&imagenumber=13745",
+    "title": "Compendio De Legislación Cultural Tomo I",
     "author": "José Stevenson Collante",
     "publishedYear": "1867-1999",
     "isbn": "SGLNC-267",
@@ -6868,7 +6881,7 @@ export const staticBookList: IBook[] = [
   {
     "id": 529,
     "coverImageUrl": null,
-    "title": "Compendio De Legislación Cultural Tomo I",
+    "title": "",
     "author": "Amaury Lora Sfer",
     "publishedYear": "2005",
     "isbn": "958-97581-0-x",
@@ -6880,7 +6893,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 530,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://grupoeditorialibañez.com/wp-content/uploads/2021/11/Estudios-sobre-derecho-probatorio.jpg",
     "title": "Estudios Sobre Derecho Probatorio 1995",
     "author": "Jorge Isaac Iglesias",
     "publishedYear": "1995",
@@ -6893,7 +6906,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 531,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://incunabula.co/wp-content/uploads/libro-el-estado-soberano-de-la-Itt-anthony-sampson-circulo-lectores.webp",
     "title": "El Estado Soberano De La Itt",
     "author": "Anthony Sampson",
     "publishedYear": "1971",
@@ -6906,7 +6919,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 532,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/b9/18/b918acd79e348bf76231f2fe88014ec2.jpg",
     "title": "El Origen De La Humanidad",
     "author": "Nestor Albessard",
     "publishedYear": "1969",
@@ -6945,7 +6958,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 535,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://eltrasterodepalacio.wordpress.com/wp-content/uploads/2012/09/climas-01.jpg",
     "title": "Climas",
     "author": "André Maurios",
     "publishedYear": "1975-1981",
@@ -6971,7 +6984,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 537,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/ce/30/ce30afd7810ca3251ac59594326cf26b.jpg",
     "title": "Tola Y Maruja Comiendo Prójimo",
     "author": "Juan Gossaín",
     "publishedYear": "2011-2012",
@@ -6984,7 +6997,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 538,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/c1/15/c115378bd1b53cc08f24ff3047cf0164.jpg",
     "title": "El Rey Siempre Está Por Encima Del Pueblo",
     "author": "Daniel Alarcon",
     "publishedYear": "2009",
@@ -7023,7 +7036,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 541,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.capsulasliterarias.com/wp-content/webp-express/webp-images/uploads/2023/05/El-Ingenioso-Hidalgo-Don-Quijote-de-la-Mancha-200x300.png.webp",
     "title": "Don Quijote De La Mancha",
     "author": "Miguel De Cervante Saavedra",
     "publishedYear": "2001",
@@ -7036,7 +7049,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 542,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://www.planetalector.pe/usuaris/thumbnails/libros/fotos/188/360/portada_los-jefes-los-cachorros_mario-vargas-llosa_202003280314.jpg",
     "title": "Los Jefes,Los Cachorros",
     "author": "Mario Vargas Llosa",
     "publishedYear": "2001",
@@ -7049,7 +7062,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 543,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn2.buscalibre.com/fit-in/360x360/f3/fe/f3fe08869e1d4a2131accd2dc7f98cb3.jpg",
     "title": "Dublineses",
     "author": "James Joyce",
     "publishedYear": "2000-2002",
@@ -7062,7 +7075,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 544,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://b2clibrerianacional.vtexassets.com/arquivos/ids/287634-800-auto?v=638645942850800000&width=800&height=auto&aspect=true",
     "title": "La Voragine",
     "author": "José Eustasio Rivera",
     "publishedYear": "2000-2001",
@@ -7127,7 +7140,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 549,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://b2clibrerianacional.vtexassets.com/arquivos/ids/296385-800-auto?v=638646192291470000&width=800&height=auto&aspect=true",
     "title": "El Idiota",
     "author": "Fiódor Dostoyevski",
     "publishedYear": "1975",
@@ -7179,7 +7192,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 553,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/1e/e0/1ee0f2435e18852cea33c79110a9a4c5.jpg",
     "title": "Compendio De Derecho Laboral",
     "author": "Guillermo Guerrero Figueroa",
     "publishedYear": "1996",
@@ -7192,7 +7205,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 554,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81jHWHWo9FL._SY385_.jpg",
     "title": "Manufacturing Planning And Estimating Handbook",
     "author": "Frank W.Wilson",
     "publishedYear": "1963-1964",
@@ -7205,7 +7218,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 555,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://images.cdn3.buscalibre.com/fit-in/360x360/50/4d/504d1f4b93148b508b899197b1b3bb78.jpg",
     "title": "Nostradamus Historiador Y Profeta",
     "author": "Jean Charles De Fontbrune",
     "publishedYear": "1981-1997",
@@ -7244,7 +7257,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 558,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/51NJucSKeeL._SY425_.jpg",
     "title": "La Masonería Historia E Iniciacion",
     "author": "Christian Jacq",
     "publishedYear": "1975-2004",
@@ -7296,7 +7309,7 @@ export const staticBookList: IBook[] = [
   },
   {
     "id": 562,
-    "coverImageUrl": null,
+    "coverImageUrl": "https://m.media-amazon.com/images/I/81JXa7icqaL._SL1500_.jpg",
     "title": "El Secreto Masónico",
     "author": "Aldo Lavagnini",
     "publishedYear": "1973-1993",
@@ -7705,19 +7718,6 @@ export const staticBookList: IBook[] = [
     "publishedYear": null,
     "isbn": "978-958-48-3801-8",
     "editorial": "DONADO POR ANTONIO PRADA FORTUL",
-    "language": "Español",
-    "description": null,
-    "genre": null,
-    "availableCopies": 1
-  },
-  {
-    "id": 594,
-    "coverImageUrl": null,
-    "title": "La Historia Jamas Contada De La Primera Logia Masónica Del Paraguay",
-    "author": "Fabian Chamorro Torres",
-    "publishedYear": "2025",
-    "isbn": "978-99989-1-387-5",
-    "editorial": null,
     "language": "Español",
     "description": null,
     "genre": null,
