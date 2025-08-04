@@ -1,4 +1,14 @@
 <div class="login-container">
   <h2>Login</h2>
+  <form [formGroup]="loginForm">
+    <div>
+      <label for="username">Usuario:</label>
+      <input type="text" id="username" formControlName="username">
+    </div>
+    <div>
+      <label for="password">Contraseña:</label>
+      <input type="password" id="password" formControlName="password">
+    </div>
+  </form>
   <button (click)="login()">Log in</button>
 </div>

@@ -23,7 +23,9 @@
 .header-text {
   display: flex;
   flex-direction: column;
+  width: 100%;
   strong {
+    text-align: center;
     font-size: 0.8rem;
     color: #555555;
     text-shadow: 2px 2px 2px #00000057;

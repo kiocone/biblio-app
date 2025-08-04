@@ -2,5 +2,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 50px;
+  background: var(--app-background, #fff);
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.login-container input {
+  width: 100%;
+  margin-bottom: 1rem;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  box-sizing: border-box;
+  /* Alinea los bordes izquierdos */
+  text-align: left;
+}
+
+.login-container input:first-child {
+  margin-top: 0;
 }

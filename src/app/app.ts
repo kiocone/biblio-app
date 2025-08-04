@@ -5,6 +5,8 @@ import { BookDetailComponent } from './book/components/book-detail/book-detail.c
 import { CommonModule } from '@angular/common';
 import { AuthService } from './auth/auth.service';
 import { Observable } from 'rxjs';
+import { LoginComponent } from './auth/components/login/login.component';
+import { ToastComponent } from './utils/components/toast/toast.component';
 
 @Component({
   selector: 'app-root',
@@ -12,6 +14,8 @@ import { Observable } from 'rxjs';
   imports: [
     CommonModule,
     BookComponent,
+    LoginComponent,
+    ToastComponent,
     FinderComponent,
     BookDetailComponent,
   ],
@@ -24,7 +28,7 @@ export class App {
   bookDetailView: boolean = false;
   selectedBook: number | undefined;
   isLoggedIn$: Observable<boolean>;
-  currentUrl: string | undefined;
+  showLogin: boolean = false;
 
   constructor(
     private authService: AuthService,
@@ -48,11 +52,21 @@ export class App {
     this.bookDetailView = false;
   }
 
-  logout() {
-    this.authService.logout();
-  }
-
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+
+  login() {
+    this.showLogin = true;
+    console.log('Login clicked');
+  }
+
+  logout() {
+    this.authService.logout();
+    console.log('Logout clicked');
+  }
+
+  register() {
+    console.log('Register clicked');
   }
 }

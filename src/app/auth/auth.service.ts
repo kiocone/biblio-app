@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
-import { Router } from '@angular/router';
 import { BehaviorSubject } from 'rxjs';
+import { environment } from '../../environments/environment';
+import { HttpClient, HttpResponse } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root',
@@ -8,20 +9,36 @@ import { BehaviorSubject } from 'rxjs';
 export class AuthService {
   private loggedIn = new BehaviorSubject<boolean>(false);
 
-  constructor(private router: Router) { }
+  constructor(
+    private http: HttpClient,
+  ) {}
 
   get isLoggedIn() {
     return this.loggedIn.asObservable();
   }
 
-  login() {
-    // Aquí iría la lógica de autenticación real
-    this.loggedIn.next(true);
-    this.router.navigate(['/']);
+  login(credentials: { userName: string; password: string }) {
+    console.log('environment.apiUrl:', environment.apiUrl)
+    this.http.post<HttpResponse<any>>(
+      `${environment.apiUrl}/users/login`,
+      {
+        credentials
+      }).subscribe({
+        next: (response) => {
+          console.log('Login successful:', response.status);
+          this.loggedIn.next(true);
+        },
+        error: (error) => {
+          if (error.status === 401) {
+            console.error('Invalid credentials');
+          } else {
+            console.error('An error occurred during login:', error.message);
+          }
+        }
+      });
   }
 
   logout() {
     this.loggedIn.next(false);
-    this.router.navigate(['/login']);
   }
 }

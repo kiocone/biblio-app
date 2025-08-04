@@ -7,20 +7,22 @@
   <div class="header-text">
     <h1 class="header-title">Biblioteca de la Serenisima</h1>
     <strong>V0.4.0 (beta)</strong>
+    <nav class="auth-nav">
+      <a (click)="login()" *ngIf="!(isLoggedIn$ | async)">Login</a>
+      <a (click)="logout()" *ngIf="isLoggedIn$ | async">Logout</a>
+    </nav>
   </div>
-  <nav class="auth-nav">
-    <a routerLink="/login" *ngIf="!(isLoggedIn$ | async)">Login</a>
-    <a routerLink="/register" *ngIf="!(isLoggedIn$ | async)">Register</a>
-    <a (click)="logout()" *ngIf="isLoggedIn$ | async">Logout</a>
-  </nav>
 </div>
+@if (!(isLoggedIn$ | async) && showLogin === true) {
+  <app-login></app-login>
+}
 <div class="main-container">
   <finder
     class="book-finder"
     [showBackButton]="bookDetailView"
     (searchEvent)="onSearch($event)"
     (backEvent)="onMainViewClick()"
-  ></finder>
+  />
   @if (selectedBook) {
     <book-detail
       [book]="selectedBook"
@@ -41,5 +43,5 @@
   <button class="scroll-to-top" (click)="scrollToTop()">
     <div class="arrow-up-icon">&#x2B06;</div>
   </button>
-
 </div>
+<toast></toast>
