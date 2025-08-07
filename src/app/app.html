@@ -6,7 +6,7 @@
   />
   <div class="header-text">
     <h1 class="header-title">Biblioteca de la Serenisima</h1>
-    <strong>V0.4.0 (beta)</strong>
+    <strong>V0.5.0 (beta)</strong>
     <nav class="auth-nav">
       <a (click)="login()" *ngIf="!(isLoggedIn$ | async)">Login</a>
       <a (click)="logout()" *ngIf="isLoggedIn$ | async">Logout</a>
@@ -31,6 +31,8 @@
     <app-book
       class="book-card-container"
       [findBook]="searchTerm"
+      [pageIndex]="pageIndex"
+      [pageSize]="pageSize"
       (selectBook)="onSelectBook($event)"
     ></app-book>
   }
@@ -40,8 +42,13 @@
       <a href="https://kiocone.com">Kiocone</a>
     </p>
   </div>
-  <button class="scroll-to-top" (click)="scrollToTop()">
-    <div class="arrow-up-icon">&#x2B06;</div>
-  </button>
+    @if (!selectedBook) {
+      <button class="next-page-down" (click)="loadNextPage()">
+        <div>&#x2B07;</div>
+      </button>
+      <button class="scroll-to-top" (click)="scrollToTop()">
+        <div>&#x2B06;</div>
+      </button>
+    }
 </div>
 <toast></toast>

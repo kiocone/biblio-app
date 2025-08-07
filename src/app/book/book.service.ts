@@ -1,44 +1,35 @@
 import { Injectable } from '@angular/core';
 import { IBook } from './book.interface';
-import { staticBookList } from './book-list';
+import { environment } from '../../environments/environment';
+import { Observable } from 'rxjs';
+import { HttpClient, HttpHeaders, HttpParams, HttpResponse } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
 
-  constructor() {
+  httpHeaders: HttpHeaders = new HttpHeaders({
+    'Content-Type': 'application/json'
+  });
+
+  constructor(
+    private http: HttpClient
+  ) {
   }
 
-  getBooks(): IBook[] {
-    staticBookList.forEach(book => {
-      if (!book.coverImageUrl) {
-        const randomNumber = Math.floor(Math.random() * 9) + 1;
-        book.coverImageUrl = `assets/portada${randomNumber}.png`; // Placeholder image for books without cover
+  getBooks(params: HttpParams): Observable<HttpResponse<IBook[]>> {
+    return this.http.get<IBook[]>(
+      `${environment.apiUrl}/books`,
+      { 
+        headers: this.httpHeaders,
+        params: params,
+        observe: 'response'
       }
-      if (!book.author) {
-        book.author = ''; // Default value for missing author
-      }
-      if (!book.editorial) {
-        book.editorial = ''; // Default value for missing editorial
-      }
-      if (!book.publishedYear) {
-        book.publishedYear = ''; // Default value for missing published year
-      }
-      if (!book.language) {
-        book.language = ''; // Default value for missing language
-      }
-      if (!book.description) {
-        book.description = ''; // Default value for missing description
-      }
-      if (!book.genre) {
-        book.genre = ''; // Default value for missing genre
-      }
-    });
-    return staticBookList;
+    );
   }
 
   getBookById(id: number): IBook | undefined {
-    return staticBookList.find(book => book.id === id);
+    return undefined; // This method should be implemented to fetch a book by its ID
   }
 }

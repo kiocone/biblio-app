@@ -29,6 +29,8 @@ export class App {
   selectedBook: number | undefined;
   isLoggedIn$: Observable<boolean>;
   showLogin: boolean = false;
+  pageIndex: number = 0;
+  pageSize!: number;
 
   constructor(
     private authService: AuthService,
@@ -54,6 +56,15 @@ export class App {
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    /* if (this.pageIndex > 0) {
+      this.pageIndex -= 1;
+      console.log('loading previous page:', this.pageIndex);
+    } */
+  }
+
+  loadNextPage(): void {
+    this.pageIndex += 1;
+    console.log('Loading next page:', this.pageIndex);
   }
 
   login() {

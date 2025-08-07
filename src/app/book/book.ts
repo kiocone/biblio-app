@@ -2,6 +2,7 @@ import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@
 import { BookService } from './book.service';
 import { IBook } from './book.interface';
 import { BookCardComponent } from './components/book-card/book-card.component';
+import { HttpParams } from '@angular/common/http';
 
 @Component({
   selector: 'app-book',
@@ -14,12 +15,35 @@ export class BookComponent implements OnInit {
   bookList: IBook[] = [];
 
   @Input() findBook: string = '';
+  @Input() pageSize: number = 0;
+  private _pageIndex: number = 0;
+  @Input()
+  set pageIndex(value: number) {
+    if (typeof value !== 'number' ) {
+      this._pageIndex = 0;
+      this.updateBooksOnPageChange();
+    } else if (this._pageIndex !== value) {
+      this._pageIndex = value;
+      this.updateBooksOnPageChange();
+    }
+  }
+  get pageIndex(): number {
+    return this._pageIndex;
+  }
+
+  private updateBooksOnPageChange(): void {
+    this.httpParams = this.httpParams.set('pageIndex', this.pageIndex.toString());
+    this.populateBooks();
+  }
   @Output() selectBook = new EventEmitter<number>();
+
+  httpParams = new HttpParams()
+    .set('pageSize', this.pageSize.toString());
 
   constructor(private bookService: BookService) {}
 
   ngOnInit() {
-    this.bookList = this.bookService.getBooks();
+    this.populateBooks();
   }
 
   ngOnChanges(changes: SimpleChanges): void {
@@ -42,11 +66,17 @@ export class BookComponent implements OnInit {
         book.editorial!.toLowerCase().includes(this.findBook.toLowerCase())
       );
     } else {
-      this.bookList = this.bookService.getBooks();
+      this.populateBooks();
     }
   }
 
   onSelectBook(bookId: number | undefined): void {
     this.selectBook.emit(bookId);
+  }
+
+  populateBooks(): void {
+    this.bookService.getBooks(this.httpParams).subscribe(books => {
+      this.bookList.push(...(books.body || []));
+    });
   }
 }

@@ -16,7 +16,7 @@ export class ToastComponent implements OnInit {
 
   showToast(message: number) {
     this.counterSubject.next(message);
-    timer(5000).subscribe(() => this.counterSubject.next(null));
+    timer(message * 1000).subscribe(() => this.counterSubject.next(null));
   }
 
   constructor() {
@@ -26,6 +26,6 @@ export class ToastComponent implements OnInit {
   ngOnInit(): void {
     //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
     //Add 'implements OnInit' to the class.
-    this.showToast(5);
+    this.showToast(1);
   }
 }
