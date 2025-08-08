@@ -56,15 +56,14 @@ export class App {
 
   scrollToTop(): void {
     window.scrollTo({ top: 0, behavior: 'smooth' });
-    /* if (this.pageIndex > 0) {
-      this.pageIndex -= 1;
-      console.log('loading previous page:', this.pageIndex);
-    } */
   }
 
   loadNextPage(): void {
     this.pageIndex += 1;
-    console.log('Loading next page:', this.pageIndex);
+    const pageHeight = document.documentElement.scrollHeight;
+    window.setTimeout(() => {
+      window.scrollTo({ top: pageHeight, behavior: 'smooth' });
+    }, 500);
   }
 
   login() {

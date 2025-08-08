@@ -76,7 +76,12 @@ export class BookComponent implements OnInit {
 
   populateBooks(): void {
     this.bookService.getBooks(this.httpParams).subscribe(books => {
-      this.bookList.push(...(books.body || []));
+      if (!books.body) return;
+      for (const book of books.body) {
+        const randomNum = Math.floor(Math.random() * 9) + 1;
+        book.coverImageUrl = book.coverImageUrl == null ? `/assets/portada${randomNum}.png` : book.coverImageUrl;
+      }
+      this.bookList.push(...books.body);
     });
   }
 }
