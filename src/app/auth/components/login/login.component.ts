@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { AuthService } from '../../auth.service';
 import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { IUserCredentials } from '../types/user-credentials.interface';
@@ -11,6 +11,8 @@ import { IUserCredentials } from '../types/user-credentials.interface';
   imports: [ReactiveFormsModule]
 })
 export class LoginComponent {
+
+  @Output() cancelLogin = new EventEmitter<void>();
 
   loginForm = new FormGroup({
     username: new FormControl('', [Validators.required]),
@@ -29,5 +31,9 @@ export class LoginComponent {
 
       this.authService.login(userCredentials);
     }
+  }
+
+  cancel() {
+    this.cancelLogin.emit();
   }
 }

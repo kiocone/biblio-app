@@ -7,6 +7,7 @@ import { AuthService } from './auth/auth.service';
 import { Observable } from 'rxjs';
 import { LoginComponent } from './auth/components/login/login.component';
 import { ToastComponent } from './utils/components/toast/toast.component';
+import { IUserLoggedIn } from './auth/components/types/user-info.interface';
 
 @Component({
   selector: 'app-root',
@@ -32,10 +33,14 @@ export class App {
   pageIndex: number = 0;
   pageSize!: number;
 
+  // Observable to get the user information from localStorage
+  user$: Observable<IUserLoggedIn | null>;
+
   constructor(
     private authService: AuthService,
   ) {
     this.isLoggedIn$ = this.authService.isLoggedIn;
+    this.user$ = this.authService.user;
   }
 
   onSearch(event: string): void {
@@ -68,15 +73,11 @@ export class App {
 
   login() {
     this.showLogin = true;
-    console.log('Login clicked');
   }
 
   logout() {
+    this.showLogin = false;
     this.authService.logout();
-    console.log('Logout clicked');
   }
 
-  register() {
-    console.log('Register clicked');
-  }
 }
