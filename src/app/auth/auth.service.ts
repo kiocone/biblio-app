@@ -15,6 +15,7 @@ export class AuthService {
 
   private loggedIn = new BehaviorSubject<boolean>(false);
   private userInfo = new BehaviorSubject<IUserLoggedIn | null>(null);
+  private loginErr = new BehaviorSubject<boolean>(false);
 
   constructor(
     private http: HttpClient,
@@ -26,6 +27,10 @@ export class AuthService {
 
   get user() {
     return this.userInfo.asObservable();
+  }
+
+  get loginError() {
+    return this.loginErr.asObservable();
   }
 
   login(credentials: { userName: string; password: string }) {
@@ -49,8 +54,10 @@ export class AuthService {
         },
         error: (error) => {
           if (error.status === 401) {
+            this.loginErr.next(true);
             console.error('Invalid credentials');
           } else {
+            this.loginErr.next(true);
             console.error('An error occurred during login:', error.message);
           }
           this.loggedIn.next(false);

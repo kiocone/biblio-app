@@ -14,4 +14,9 @@
     <button (click)="login()">Log in</button>
     <button (click)="cancel()">Cancelar</button>
   </div>
+  @if (loginError$ | async) {
+    <div class="error-message">
+      <p>Error: Credenciales inválidas. Por favor, inténtelo de nuevo.</p>
+    </div>
+  }
 </div>
