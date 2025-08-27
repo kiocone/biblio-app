@@ -6,7 +6,7 @@
   />
   <div class="header-text">
     <h1 class="header-title">Biblioteca de la Serenisima</h1>
-    <strong>V0.5.0 (beta)</strong>
+    <strong>V0.6.0 (beta)</strong>
     <nav class="auth-nav">
       <a (click)="login()" *ngIf="!(isLoggedIn$ | async)">Login</a>
       <a (click)="logout()" *ngIf="isLoggedIn$ | async"> {{ (user$ | async)?.fullname + " - "}} Logout</a>
