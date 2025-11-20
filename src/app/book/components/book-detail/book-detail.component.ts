@@ -1,4 +1,4 @@
-import { Component, Input, OnChanges, OnInit } from "@angular/core";
+import { ChangeDetectorRef, Component, EventEmitter, Input, OnChanges, Output, SimpleChanges } from "@angular/core";
 import { BookService } from "../../book.service";
 import { IBook } from "../../book.interface";
 
@@ -7,26 +7,28 @@ import { IBook } from "../../book.interface";
   templateUrl: './book-detail.component.html',
   styleUrl: './book-detail.component.scss'
 })
-export class BookDetailComponent implements OnInit, OnChanges {
+export class BookDetailComponent implements OnChanges {
 
-  @Input() book: number | undefined;
+  @Input() book: string | undefined;
 
   bookDetail!: IBook | undefined;
 
-  constructor( private bookService: BookService) {}
+  constructor( private bookService: BookService, private cdr: ChangeDetectorRef) {}
 
-  ngOnInit(): void {
-    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
-    //Add 'implements OnInit' to the class.
-    if (typeof this.book === 'number') {
-      this.bookDetail = this.bookService.getBookById(this.book);
-    }
+  ngOnChanges(changes: SimpleChanges): void {
+    this.bookService.getBookById(this.book as string).subscribe({
+      next: (response) => {
+        console.log('Book detail response:', response.body);
+        if (response.body) {
+          this.bookDetail = response.body;
+        };
+        this.cdr.detectChanges();
+      },
+      error: (error) => {
+        console.error('Error fetching book details:', error);
+        this.bookDetail = undefined;
+        this.cdr.detectChanges()
+      }
+    });
   }
-
-  ngOnChanges(): void {
-    if (typeof this.book === 'number') {
-      this.bookDetail = this.bookService.getBookById(this.book);
-    }
-  }
-
 }

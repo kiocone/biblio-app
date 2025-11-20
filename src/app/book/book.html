@@ -1,5 +1,9 @@
 @for (book of bookList; track book) {
-  <book-card class="book-card" [book]="book" (selectBook)="onSelectBook($event)"></book-card>
+  <book-card
+    class="book-card"
+    [book]="book"
+    (selectBook)="onSelectBook($event)"
+  ></book-card>
 }
 @if (!bookList || bookList.length === 0) {
   <div class="no-book">No se encontraron coincidencias.</div>

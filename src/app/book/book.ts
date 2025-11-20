@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
+import { ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
 import { BookService } from './book.service';
 import { IBook } from './book.interface';
 import { BookCardComponent } from './components/book-card/book-card.component';
@@ -35,43 +35,43 @@ export class BookComponent implements OnInit {
     this.httpParams = this.httpParams.set('pageIndex', this.pageIndex.toString());
     this.populateBooks();
   }
-  @Output() selectBook = new EventEmitter<number>();
+  @Output() selectBook = new EventEmitter<string | undefined>();
 
   httpParams = new HttpParams()
     .set('pageSize', this.pageSize.toString());
 
-  constructor(private bookService: BookService) {}
-
+  constructor(private bookService: BookService, private cdr: ChangeDetectorRef) {}
+  
   ngOnInit() {
     this.populateBooks();
+    this.cdr.detectChanges()
   }
 
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['findBook']) {
       this.filterBooks();
     }
+    this.cdr.detectChanges()
   }
 
   private filterBooks(): void {
-    // get property names of the IBook interface with string type
-    const IBookProperties: (keyof IBook)[] = ['title', 'author', 'genre', 'description', 'editorial']; // Explicitly define as keys of IBook
-
     if (this.findBook) {
-      this.bookList = this.bookList.filter(book =>
-        book.title.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.author!.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.publishedYear!.toString().includes(this.findBook) ||
-        book.genre!.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.description!.toLowerCase().includes(this.findBook.toLowerCase()) ||
-        book.editorial!.toLowerCase().includes(this.findBook.toLowerCase())
-      );
+    this.httpParams = new HttpParams().set('search', this.findBook);
+      this.bookService.getBooks(this.httpParams).subscribe({
+        next: response => {
+          if (!response.body) return;
+          this.bookList = response.body;
+        }
+      });
     } else {
       this.populateBooks();
     }
+    this.cdr.detectChanges()
   }
 
-  onSelectBook(bookId: number | undefined): void {
-    this.selectBook.emit(bookId);
+  onSelectBook(bookInfo: string | undefined): void {
+    this.selectBook.emit(bookInfo);
+    this.cdr.detectChanges()
   }
 
   populateBooks(): void {
@@ -83,5 +83,6 @@ export class BookComponent implements OnInit {
       }
       this.bookList.push(...books.body);
     });
+    this.cdr.detectChanges()
   }
 }

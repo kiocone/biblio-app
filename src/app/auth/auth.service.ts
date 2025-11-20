@@ -43,7 +43,6 @@ export class AuthService {
         observe: 'response'
       }).subscribe({
         next: (response) => {
-          console.log('Login successful:', response.status);
           this.loggedIn.next(true);
           // Store token or user info
           if (response.body && response.body.authUser) {

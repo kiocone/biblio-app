@@ -29,7 +29,13 @@ export class BookService {
     );
   }
 
-  getBookById(id: number): IBook | undefined {
-    return undefined; // This method should be implemented to fetch a book by its ID
+  getBookById(id: string): Observable<HttpResponse<IBook>> {
+    return this.http.get<IBook>(
+      `${environment.apiUrl}/books/${id}`,
+      { 
+        headers: this.httpHeaders,
+        observe: 'response'
+      }
+    );
   }
 }

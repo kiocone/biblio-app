@@ -1,5 +1,6 @@
-import { Component, Output, EventEmitter, Input } from "@angular/core";
+import { Component, Output, EventEmitter, Input, ChangeDetectorRef } from "@angular/core";
 import { FormControl, FormGroup, ReactiveFormsModule } from "@angular/forms";
+import { debounceTime, Subject } from "rxjs";
 
 @Component({
   selector: 'finder',
@@ -17,22 +18,35 @@ export class FinderComponent {
   @Output() searchEvent = new EventEmitter<string>();
   @Output() backEvent = new EventEmitter<void>();
 
-  constructor() {
+  constructor(private cdr: ChangeDetectorRef) {
+  }
+
+  private searchSubject = new Subject<string>();
+
+  ngOnInit(): void {
+    this.searchSubject.pipe(
+      debounceTime(300)
+    ).subscribe(query => {
+      this.searchEvent.emit(query.trim());
+    });
+    this.cdr.detectChanges()
   }
 
   searchBooks(event: any): void {
-    console.log('Searching books with query:', event);
     this.searchForm.controls.searchQuery.setValue(event.target.value);
-    this.searchEvent.emit(this.searchForm.controls.searchQuery.value!.trim());
+    this.searchSubject.next(event.target.value);
+    this.cdr.detectChanges()
   }
 
   resetSearch(): void {
     this.searchForm.controls.searchQuery.setValue('');
     this.searchEvent.emit(this.searchForm.controls.searchQuery.value!);
+    this.cdr.detectChanges()
   }
   
   onBackButtonClicked(): void {
     this.backEvent.emit();
     this.showBackButton = false;
+    this.cdr.detectChanges()
   }
 }

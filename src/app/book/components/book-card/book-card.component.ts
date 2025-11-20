@@ -9,9 +9,11 @@ import { IBook } from "../../book.interface";
 })
 export class BookCardComponent {
   @Input() book: IBook | undefined;
-  @Output() selectBook = new EventEmitter<number | undefined>();
+  @Output() selectBook = new EventEmitter<string | undefined>();
 
-  onSelectBook(bookId: number | undefined): void {
+  constructor() {}
+
+  onSelectBook(bookId: string | undefined): void {
     this.selectBook.emit(bookId);
   }
 }
