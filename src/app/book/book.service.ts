@@ -1,24 +1,23 @@
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { IBook } from './book.interface';
 import { environment } from '../../environments/environment';
-import { Observable } from 'rxjs';
-import { HttpClient, HttpHeaders, HttpParams, HttpResponse } from '@angular/common/http';
+import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
+import { tap } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
 })
 export class BookService {
 
+  http = inject(HttpClient);
+
   httpHeaders: HttpHeaders = new HttpHeaders({
     'Content-Type': 'application/json'
   });
 
-  constructor(
-    private http: HttpClient
-  ) {
-  }
+  lastParams: string = '';
 
-  getBooks(params: HttpParams): Observable<HttpResponse<IBook[]>> {
+  getBooks(params?: HttpParams) {
     return this.http.get<IBook[]>(
       `${environment.apiUrl}/books`,
       { 
@@ -26,10 +25,16 @@ export class BookService {
         params: params,
         observe: 'response'
       }
+    ).pipe(
+      tap(response => {
+        setTimeout(() => {
+          console.log('Books fetched');
+        }, 300);
+      })
     );
   }
 
-  getBookById(id: string): Observable<HttpResponse<IBook>> {
+  getBookById(id: string) {
     return this.http.get<IBook>(
       `${environment.apiUrl}/books/${id}`,
       { 

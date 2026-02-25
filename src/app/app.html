@@ -6,10 +6,14 @@
   />
   <div class="header-text">
     <h1 class="header-title">Biblioteca de la Serenisima</h1>
-    <strong>V0.7.0 (beta)</strong>
+    <strong>V0.8.0 (beta)</strong>
     <nav class="auth-nav">
-      <a (click)="login()" *ngIf="!(isLoggedIn$ | async)">Login</a>
-      <a (click)="logout()" *ngIf="isLoggedIn$ | async"> {{ (user$ | async)?.fullname + " - "}} Logout</a>
+      @if (!(isLoggedIn$ | async)) {
+        <a (click)="login()">Login</a>
+      }
+      @if (isLoggedIn$ | async) {
+        <a (click)="logout()">{{ (user$ | async)?.fullname + " - " }} Logout</a>
+      }
     </nav>
   </div>
 </div>
@@ -17,38 +21,18 @@
   <app-login (cancelLogin)="showLogin = false"></app-login>
 }
 <div class="main-container">
-  <finder
-    class="book-finder"
-    [showBackButton]="bookDetailView"
-    (searchEvent)="onSearch($event)"
-    (backEvent)="onMainViewClick()"
-  />
-  @if (selectedBook) {
-    <book-detail
-      [book]="selectedBook"
-    ></book-detail>
-  } @else {
-    <app-book
-      class="book-card-container"
-      [findBook]="searchTerm"
-      [pageIndex]="pageIndex"
-      [pageSize]="pageSize"
-      (selectBook)="onSelectBook($event)"
-    ></app-book>
-  }
+  <router-outlet />
   <div class="footer">
     <p>
       <strong>Desarrollado por: </strong>
       <a href="https://kiocone.com">Kiocone</a>
     </p>
   </div>
-  @if (!selectedBook) {
-    <button class="next-page-down" (click)="loadNextPage()">
-      <div>&#x2B07;</div>
-    </button>
-    <button class="scroll-to-top" (click)="scrollToTop()">
-      <div>&#x2B06;</div>
-    </button>
-  }
+  <button class="next-page-down" (click)="loadNextPage()">
+    <div>&#x2B07;</div>
+  </button>
+  <button class="scroll-to-top" (click)="scrollToTop()">
+    <div>&#x2B06;</div>
+  </button>
 </div>
 <toast></toast>

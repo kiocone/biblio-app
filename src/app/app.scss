@@ -48,63 +48,6 @@
   }
 }
 
-.book-finder {
-  display: flex;
-  margin: 0.5rem 10px !important;
-  @media screen and (max-width: 450px) {
-    margin: 0.5rem 0px !important;
-  } 
-}
-  
-.book-card-container {
-  display: grid;
-  margin: 0.5rem 10px !important;
-  padding-bottom: 36px;
-
-
-  @media (min-width: 1024px) {
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 18px;
-
-    .book-card {
-      width: 345px;
-    }
-  }
-
-
-  @media (max-width: 1280px) {
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 15px;
-
-    .book-card {
-      width: 345px;
-    }
-  }
-
-  @media (max-width: 1024px) {
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(4, 1fr);
-  gap: 15px;
-
-    .book-card {
-      width: 345px;
-    }
-  }
-  @media (max-width: 500px) {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    gap: 10px;
-    align-items: center;
-    
-    .book-card {
-      width: 300px;
-    }
-  }
-    
-}
-
 .scroll-to-top {
   position: fixed;
   bottom: 20px;

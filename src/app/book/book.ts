@@ -1,88 +1,219 @@
-import { ChangeDetectorRef, Component, EventEmitter, Input, OnInit, Output, SimpleChanges } from '@angular/core';
+import { Component, EventEmitter, inject, input, Input, OnChanges, OnInit, Output, resource, signal, SimpleChanges } from '@angular/core';
 import { BookService } from './book.service';
 import { IBook } from './book.interface';
-import { BookCardComponent } from './components/book-card/book-card.component';
 import { HttpParams } from '@angular/common/http';
+import { Router } from '@angular/router';
+import { FinderComponent } from './components/finder/finder.component';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-book',
-  imports: [BookCardComponent],
-  templateUrl: './book.html',
-  styleUrl: './book.scss'
+  template: `
+  <div style="display: flex; flex-direction: column;">
+    <finder
+      class="book-finder"
+      [showBackButton]="showBackButton"
+      (searchEvent)="onSearch($event)"
+      (backEvent)="onBackClick()"
+    />
+    @if (loading()) {
+      <div class="no-book">Cargando libros...</div>
+    } @else {
+      <div class="app-book">
+        @for (book of bookList; track book) {
+          <div class="book-card" (click)="onSelectBook(book.id)">
+            <img [src]="book.coverImageUrl" alt="{{ book.title }}" class="book-image" />
+            <div class="book-details">
+              <h3>{{ book.title }}</h3>
+              <p><strong>Autor:</strong> {{ book.author }}</p>
+              <p><strong>Año:</strong> {{ book.publishedYear }}</p>
+              <p><strong>Editorial:</strong> {{ book.editorial }}</p>
+            </div>
+          </div>
+        }
+      </div>
+    }
+  </div>
+  @if (!booksResource.value() && !loading()) {
+    <div class="no-book">No se encontraron coincidencias.</div>
+  }
+  `,
+  styles: `
+    .book-card {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      min-height: 342px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 16px;
+      align-items: center;
+      box-shadow: 4px 6px 1px rgba(0, 0, 0, 0.15);
+
+      .book-image {
+        max-height: 190px;
+        margin-bottom: 16px;
+        max-width: 287px;
+      }
+
+      .book-details {
+        text-align: center;
+        flex-grow: 1;
+
+        h3 {
+          margin: 0 0 8px;
+        }
+
+        p {
+          margin: 4px 0;
+        }
+      }
+    }
+    .book-card {
+      background-color: #fff;
+      margin-bottom: auto;
+      width: 334px;
+    }
+    .no-book{
+      width: 100%;
+      text-align: center;
+      font-size: larger;
+    }
+
+    .book-finder {
+      display: flex;
+      margin: 0.5rem 10px !important;
+      @media screen and (max-width: 450px) {
+        margin: 0.5rem 0px !important;
+      } 
+    }
+    .app-book {
+      display: grid;
+      width: auto;
+      margin: 0.5rem 10px !important;
+      padding-bottom: 36px;
+
+
+      @media (min-width: 1024px) {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 18px;
+
+        .book-card {
+          width: 345px;
+        }
+      }
+
+
+      @media (max-width: 1280px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 15px;
+
+        .book-card {
+          width: 345px;
+        }
+      }
+
+      @media (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      gap: 15px;
+
+        .book-card {
+          width: 345px;
+        }
+      }
+      @media (max-width: 500px) {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+        align-items: center;
+        
+        .book-card {
+          width: 300px;
+        }
+      }
+    }
+  `,
+  imports: [
+    FinderComponent
+  ],
+  standalone: true
 })
-export class BookComponent implements OnInit {
+export class BookComponent implements OnInit, OnChanges {
 
   bookList: IBook[] = [];
 
-  @Input() findBook: string = '';
-  @Input() pageSize: number = 0;
-  private _pageIndex: number = 0;
-  @Input()
-  set pageIndex(value: number) {
-    if (typeof value !== 'number' ) {
-      this._pageIndex = 0;
-      this.updateBooksOnPageChange();
-    } else if (this._pageIndex !== value) {
-      this._pageIndex = value;
-      this.updateBooksOnPageChange();
-    }
-  }
-  get pageIndex(): number {
-    return this._pageIndex;
-  }
+  bookService = inject(BookService);
+  router = inject(Router);
 
-  private updateBooksOnPageChange(): void {
-    this.httpParams = this.httpParams.set('pageIndex', this.pageIndex.toString());
-    this.populateBooks();
-  }
+  @Input() findBook: string = '';
+  pageIndex = input<number>();
   @Output() selectBook = new EventEmitter<string | undefined>();
 
-  httpParams = new HttpParams()
-    .set('pageSize', this.pageSize.toString());
+  showBackButton: boolean = false;
+  selectedBook: boolean = false;
+  loading = signal(false);
 
-  constructor(private bookService: BookService, private cdr: ChangeDetectorRef) {}
-  
+  httpParams = signal(new HttpParams());
+
+  booksResource = resource({
+    loader: () => { 
+      this.loading.set(true);
+      const url = new URL(`${environment.apiUrl}/books`);
+      this.httpParams().keys().forEach(key => {
+        url.searchParams.set(key, this.httpParams().get(key) || '');
+      });
+      return fetch(url, {
+        method: 'GET',
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        this.loading.set(false);
+        return response.json();
+      })
+      .then(data => {
+        this.bookList = [...this.bookList, ...data];
+        return this.bookList;
+      })}
+  });
+
   ngOnInit() {
-    this.populateBooks();
-    this.cdr.detectChanges()
+    if (!!this.pageIndex) {
+      this.httpParams.update(params => params.set('pageIndex', String(this.pageIndex())));
+    }
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes['findBook']) {
-      this.filterBooks();
+    if (changes['pageIndex'] && changes['pageIndex'].currentValue !== changes['pageIndex'].previousValue) {
+      this.httpParams.update(params => params.set('pageIndex', String(this.pageIndex())));
+      this.booksResource.reload();
     }
-    this.cdr.detectChanges()
-  }
-
-  private filterBooks(): void {
-    if (this.findBook) {
-    this.httpParams = new HttpParams().set('search', this.findBook);
-      this.bookService.getBooks(this.httpParams).subscribe({
-        next: response => {
-          if (!response.body) return;
-          this.bookList = response.body;
-        }
-      });
-    } else {
-      this.populateBooks();
-    }
-    this.cdr.detectChanges()
   }
 
   onSelectBook(bookInfo: string | undefined): void {
-    this.selectBook.emit(bookInfo);
-    this.cdr.detectChanges()
+    this.router.navigate(['/book', bookInfo]);
   }
 
-  populateBooks(): void {
-    this.bookService.getBooks(this.httpParams).subscribe(books => {
-      if (!books.body) return;
-      for (const book of books.body) {
-        const randomNum = Math.floor(Math.random() * 9) + 1;
-        book.coverImageUrl = book.coverImageUrl == null ? `/assets/portada${randomNum}.png` : book.coverImageUrl;
-      }
-      this.bookList.push(...books.body);
-    });
-    this.cdr.detectChanges()
+  onSearch(event: string): void {
+    if (event) {
+      this.httpParams.set(new HttpParams().set('search', event));
+      this.selectedBook = true;
+      this.showBackButton = true;
+      this.bookList = [];
+      this.booksResource.reload();
+    }
+  }
+
+  onBackClick(): void {
+    this.httpParams.set(new HttpParams().set('pageIndex', '0'));
+    this.showBackButton = false;
+    this.selectedBook = false;
+    this.bookList = [];
+    this.booksResource.reload();
   }
 }
